@@ -1,0 +1,8 @@
+<div id="holiday-show">
+  <% @holidays.each do |holiday|  %>
+    <h1><%= holiday.title %></h1>
+    <div id="holiday-index-photo">
+      <%= link_to image_tag(holiday.photo), holiday_path(holiday.id)%>
+    </div>
+  <% end %>
+</div>
