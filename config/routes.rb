@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
   resources :holidays, only: [:index, :show]
+  resources :koshers, only: [:index, :show]
 end

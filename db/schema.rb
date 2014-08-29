@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140828145244) do
+ActiveRecord::Schema.define(version: 20140829035620) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,28 @@ ActiveRecord::Schema.define(version: 20140828145244) do
     t.text   "plot"
     t.text   "customs"
     t.string "date"
+  end
+
+  create_table "koshers", force: true do |t|
+    t.text   "kosher_description"
+    t.text   "animal_quote"
+    t.string "animal_src"
+    t.text   "animal_description"
+    t.text   "fish_quote"
+    t.string "fish_src"
+    t.text   "fish_description"
+    t.text   "bird_quote"
+    t.string "bird_src"
+    t.text   "bird_description"
+    t.text   "remaining_creatures"
+    t.text   "slaughter"
+    t.text   "utensils"
+    t.text   "milk_and_meat"
+    t.text   "kosher_certifications"
+    t.string "ortho_union"
+    t.string "organized_kosher"
+    t.string "star_k"
+    t.string "kof_kosher"
   end
 
   create_table "users", force: true do |t|

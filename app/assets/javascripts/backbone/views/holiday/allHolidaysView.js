@@ -4,7 +4,6 @@ App.AllHolidaysView = Backbone.View.extend({
     console.log("New Holiday List View");
     this.listenTo(this.collection, 'add', this.addOne)
     this.listenTo(this.collection, 'reset', this.addAll);
-    // this.render();
   },
   addOne: function(holiday){
     var holidayView = new App.HolidayIndexView({model: holiday});

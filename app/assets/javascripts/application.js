@@ -32,6 +32,7 @@ App = {
 };
 
 $(document).ready(function(){
-  App.holidayRouter = new App.Router();
+  App.holidayRouter = new App.HolidayRouter();
+  App.kosherRouter = new App.KosherRouter();
   Backbone.history.start();
 })

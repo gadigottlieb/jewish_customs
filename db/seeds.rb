@@ -10,6 +10,7 @@ puts 'CREATED ADMIN USER: ' << user.email
 
 
 Holiday.destroy_all
+Kosher.destroy_all
 
 Holiday.create({
   title: "Sabbath",
@@ -117,7 +118,7 @@ Holiday.create({
                 you shall hold the Feast of Booths for seven days…You shall hold a festival…in the
                 place that the Lord will choose, for the Lord your God will bless all your crops
                 and all your undertakings, and you shall have nothing but joy.",
-  bible_src:    "Deuteronomy: 16:13-15",
+  bible_src:    "Deuteronomy 16:13-15",
   plot:         "Feast of Booths, Feast of Tabernacles is a biblical Jewish holiday celebrated on the
                 15th day of the month of Tishrei (varies from late September to late October). It is
                 one of the three biblically mandated festivals Shalosh regalim on which Hebrews were
@@ -286,9 +287,8 @@ Holiday.create({
 Holiday.create({
   title:       "Shavuot",
   photo:       "http://torahinmyheart.com/yahoo_site_admin/assets/images/Torah_Scroll_from_123rf.175212641.jpg",
-  bible_quote: "'And thou shalt observe the feast of weeks, even of the first-fruits of wheat harvest, and the feast of ingathering at the turn of the year.'
-                'And thou shalt keep the feast of weeks unto the LORD thy God after the measure of the freewill-offering of thy hand,
-                which thou shalt give, according as the LORD thy God blesseth thee.'",
+  bible_quote: "'You shall celebrate the Feast of Weeks, that is, the first fruits of the wheat harvest, and the Feast of Ingathering at the turn of the year.'
+                'Then you shall celebrate the Feast of Weeks to the Lord your God with a tribute of a freewill offering of your hand, which you shall give just as the Lord your God blesses you'",
   bible_src:   "Exodus 34:22, Deuteronomy 16:10",
   plot:        "Shavuot known as the “Festival of Weeks” in English commemorates the anniversary of the day God gave the Torah to
                 the entire nation of Israel assembled at Mount Sinai, although the association between the giving of the Torah
@@ -354,7 +354,7 @@ Holiday.create({
                 exile from the Holy Land. The Romans crushed Bar Kokhba's revolt and destroyed the city of Betar, killing over 500,000 Jews,
                 on July 8, 135 CE (Av 9, AM 3892). Following the Bar Kokhba revolt, Roman commander Turnus Rufus plowed the site of the Temple
                 and the surrounding area, in 135 CE.",
-customs:        "Tisha B'Av falls in July or August in the Western calendar. When Tisha B'Av falls on the Shabbat (Saturday)
+  customs:     "Tisha B'Av falls in July or August in the Western calendar. When Tisha B'Av falls on the Shabbat (Saturday)
                 observance of Tisha B'Av takes place on Sunday. No outward signs of mourning intrude upon the normal Sabbath,
                 although normal Sabbath eating and drinking end at sunset, rather than nightfall. The fast lasts about 25 hours,
                 beginning at sunset on the preceding evening lasting until nightfall the next day. In addition to fasting, other
@@ -368,5 +368,66 @@ customs:        "Tisha B'Av falls in July or August in the Western calendar. Whe
                 Torah study is forbidden on Tisha B'Av (as it is considered a spiritually enjoyable activity), except for the study of
                 distressing texts such as the Book of Lamentations, the Book of Job, portions of Jeremiah and chapters of the Talmud that
                 discuss the laws of mourning.",
-date:           "9th of Av"
+  date:        "9th of Av"
+  })
+Kosher.create({
+  kosher_description:  "Kosher is the set of Jewish religious dietary laws. Food that may be consumed
+                        according to Jewish law is termed kosher in English but comes from the Hebrew
+                        word kasher, which means ‘fit’ to eat.  Most of the basic laws of kashrut are
+                        derived from the Torah’s Books of Leviticus and Deuteronomy. Their details and
+                        practical application, are set down in the oral law, which is now the Mishnah and Talmud.",
+  animal_quote:        "And every beast that parts the hoof, and has the hoof cloven into two, and chews the
+                        cud among the beasts, that you may eat.",
+  animal_src:          "Deuteronomy 14:6",
+  animal_description:  "Even if an animal lacks only one of these characteristics it can not be eaten.
+                        Those animals that chew the cud, eat vegetation; and animals with split hooves are
+                        usually peaceful animals. Hence the two specifications rule out all animals that prey
+                        on others. Cows, sheep, goats, and deer are all kosher animals. Pigs, rabbits, squirrels,
+                        bears, dogs, cats, camels, and horses are not.",
+  fish_quote:          "These you may eat, whatever is in the water: all that have fins and scales, those in the
+                        water, in the seas or in the rivers, you may eat.",
+  fish_src:            "Leviticus 11:9",
+  fish_description:    "This rule has sometimes caused problems as some scales and fins are rather rudimentary
+                        and so there has been considerable debate about sturgeon and whether it is permitted to
+                        eat caviar.",
+  bird_quote:          "These are the birds you are to regard as unclean and not eat because they are unclean:
+                        the eagle, the vulture, the black vulture. The red kite, any kind of black kite. Any kind
+                        of raven. The horned owl, the screech owl, the gull, any kind of hawk. The little owl, the
+                        cormorant, the great owl. The white owl, the desert owl, the osprey. The stork, any kind of
+                        heron, the hoopoe and the bat.",
+  bird_src:            "Leviticus 11:13-19",
+  bird_description:    "Instead of giving a general rule for birds, the Bible lists the names of the species which
+                        are not permitted to be eaten. The Mishnah states that these forbidden birds seize their food
+                        in their claws and have an extra talon,6. meaning that these are birds of prey. The problem of
+                        relying on a list of names is that for several of these names, we are not sure of their exact
+                        modern equivalents. And secondly. Is it right that when any new species is found, that it is
+                        automatically kosher because it was not on the original list of those specifically forbidden.
+                        This caused a problem with American turkeys. Some Rabbis approved their suitability for eating,
+                        but a few did not.",
+  remaining_creatures: "Almost any other creature apart from those listed above is not permitted to be eaten. All
+                        reptiles, amphibians and invertebrate animals are forbidden to us. In the latter category are
+                        included shellfish. The only other creatures that the Bible permits are a small group of locusts.",
+  slaughter:           "Animals and birds must be slaughtered by a trained individual using a special method of slaughter.
+                        The slaughterer must sever the jugular vein, carotid artery, esophagus, and trachea in a single
+                        continuous cutting movement with an unserrated sharp knife. Failure to follow this criteria renders
+                        the meat of the animal unsuitable. The body must be checked after slaughter to confirm that the animal
+                        had no medical condition or defect. If the animal did have any issue, the meat would not be kosher.",
+  utensils:            "Utensils used for non-kosher foods become non-kosher, and make even otherwise kosher food prepared with
+                        them non-kosher. Some such utensils, depending on the material they are made from, can be made suitable
+                        for preparing kosher food again by immersion in boiling water or by the application of a blowtorch.",
+  milk_and_meat:       "Meat and milk cannot be mixed. The source for this is found in Deuteronomy 14:21 where it mentions ‘You
+                        shall not cook a kid in its mother’s milk’. From this it is understood that meat and dairy products cannot
+                        be served at the same meal, served or cooked in the same utensils, or stored together. Observant Jews have
+                        separate sets of dishes, and sometimes different kitchens, for meat and milk, and wait anywhere between one
+                        and six hours after eating meat before consuming milk products.",
+  kosher_certifications: "There are many food products that have kosher certifications symbols. Manufacturers sometimes identify
+                          the products that have received such certification by adding these symbols to the label.  These symbols
+                          are known in Judaism as hechsherim. Due to differences in kashrut standards held by different organizations,
+                          the hechsheirim of certain Jewish authorities may at times be considered invalid by other Jewish authorities.
+                          To determine if certain items are kosher, below are examples of kosher symbols that can be found on many
+                          products throughout America.",
+  ortho_union:          "http://www.nachas.org/BethYehuda/koshsym/Image1.gif",
+  organized_kosher:     "http://www.nachas.org/BethYehuda/koshsym/Image2.gif",
+  star_k:               "http://www.nachas.org/BethYehuda/koshsym/Image3.gif",
+  kof_kosher:           "http://www.nachas.org/BethYehuda/koshsym/Image4.gif"
   })
