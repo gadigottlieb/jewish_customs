@@ -18,6 +18,7 @@ Holiday.create({
                 By the seventh day God had finished the work he had been doing; so on the seventh
                 day he rested from all his work. Then God blessed the seventh day and made it holy,
                 because on it he rested from all the work of creating that he had done.",
+  bible_src:   "Genesis 2:1-3",
   plot:         "The purpose of the Sabbath is a day of rest.
                 God finished creating the world in six day and rested on the seventh.
                 We are thus commanded to observe the Sabbath. The source for this is in the Ten Commandments.
