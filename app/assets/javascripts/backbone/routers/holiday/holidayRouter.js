@@ -15,6 +15,7 @@ App.Router = Backbone.Router.extend({
   },
   show: function(id){
     console.log("Showing a Blog");
+    $('#holiday-list').empty();
     var holidayModel = App.Collections.holidays.get(id);
     App.Views.holidayShowView = new App.HolidayShowView({
       model: holidayModel

@@ -11,7 +11,7 @@ App.AllHolidaysView = Backbone.View.extend({
     this.$el.append(holidayView.$el);
   },
   addAll: function(){
-    debugger;
+    this.$el.html("");
     this.collection.each(function(holiday){
       this.addOne(holiday);
     }, this)
