@@ -80,14 +80,26 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
+.holiday-index{
+  display: inline-block;
+  text-align: center;
+}
 //Holiday Index Photos
 #holiday-index-photo{
   height: 150px;
   width: 150px;
+  cursor: pointer;
 }
 
 // Holiday Show Page
 #holiday-show-photo{
   height:300px;
   width: 350px;
+}
+#kosher-body{
+  text-align: center;
+
+}
+.kosher-symbols{
+  display: inline-block;
 }
