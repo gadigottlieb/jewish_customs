@@ -11,6 +11,7 @@ App.HolidayRouter = Backbone.Router.extend({
   index: function(){
     $('#holiday-show').empty();
     $('#kosher-index').empty();
+    $('#kosher-form').empty();
     console.log("Holiday Index");
     App.Collections.holidays.fetch({reset: true});
   },
@@ -18,6 +19,7 @@ App.HolidayRouter = Backbone.Router.extend({
     console.log("Showing a Blog");
     $('#holiday-list').empty();
     $('#kosher-index').empty();
+    $('#kosher-form').empty();
     var holidayModel = App.Collections.holidays.get(id);
     App.Views.holidayShowView = new App.HolidayShowView({
       model: holidayModel
