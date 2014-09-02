@@ -43,6 +43,7 @@ class CategoriesController < ApplicationController
   end
 
   def kosher
+    @kosher = Category.find_by({title: "Kosher"})
   end
 
   private
