@@ -1,8 +1,11 @@
+<%= link_to 'New Question', new_question_path %>
 <div id="questions-index">
   <% @questions.each do |q| %>
+    <%= link_to "Questions Show Page", question_path(q) %>
     <h2><%= q.question %></h2>
     <p>A. <%= q.option_1 %></p>
     <p>B. <%= q.option_2 %></p>
     <p>C. <%= q.option_3 %></p>
     <p>D. <%= q.option_4 %></p>
+  <% end %>
 </div>

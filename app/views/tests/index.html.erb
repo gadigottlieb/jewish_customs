@@ -1,0 +1,4 @@
+<%= link_to 'New Test', new_test_path %>
+<% @tests.each do |t| %>
+  <h1><%= link_to t.title, test_path(t) %></h1>
+<% end %>

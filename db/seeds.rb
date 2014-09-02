@@ -371,62 +371,69 @@ Category.create({
                 discuss the laws of mourning.",
   date:        "9th of Av"
   })
-
 Question.create({
-  question: "Based on Jewish Law, a Jew can eat the which animal listed below?",
-  option_1: "Pig",
-  option_2: "Bear",
-  option_3: "Cow",
-  option_4: "Rabbit",
-  correct_answer: "option_3",
-  category_id: 1
-  })
-Question.create({
-  question: "Based on Jewish Law, a Jew cannot eat which type of water fish listed below?",
-  option_1: "Tuna",
-  option_2: "Shrimp",
-  option_3: "Salmon",
-  option_4: "Carp",
+  question: "What is the purpose of the Sabbath?",
+  option_1: "To eat food",
+  option_2: "Day of Rest",
+  option_3: "Catch up on TV shows",
+  option_4: "Play sports",
   correct_answer: "option_2",
-  category_id: 1
+  category_id: 32
   })
 Question.create({
-  question: "Which bird is Kosher?",
-  option_1: "Chicken",
-  option_2: "Hawk",
-  option_3: "Owl",
-  option_4: "Raven",
-  correct_answer: "option_1",
-  category_id: 1
+  question: "When does the Sabbath begin?",
+  option_1: "Friday morning",
+  option_2: "Friday night",
+  option_3: "Saturday morning",
+  option_4: "Sunday morning",
+  correct_answer: "option_2",
+  category_id: 32
   })
 Question.create({
-  question: "A kosher animal has to go through a major step before being classified as kosher. What is this step?",
-  option_1: "Rabbi or slaughterer must bless the kosher animal.",
-  option_2: "Rabbi or slaughterer must shoot the animal in the head.",
-  option_3: "Rabbi or slaughterer must spear the animals heart.",
-  option_4: "Rabbi or slaughterer must sever the head from the neck with sharp knife.",
+  question: "What action marks the start of the Sabbath?",
+  option_1: "Eating the hallah bread",
+  option_2: "Blessing of the wine",
+  option_3: "Lighting the Sabbath candles",
+  option_4: "Going to synagogue for prayer services",
+  correct_answer: "option_2",
+  category_id: 32
+  })
+Question.create({
+  question: "What song does the husband sing to his wife before the friday night meal?",
+  option_1: "Eshet Chayil",
+  option_2: "Woman of Valor",
+  option_3: "I Love You Baby",
+  option_4: "a and b",
   correct_answer: "option_4",
-  category_id: 1
+  category_id: 32
   })
 Question.create({
-  question: "A Jew can eat which of the following meals:",
-  option_1: "Cheeseburger from McDonalds",
-  option_2: "Meatball Pepperoni Pizza from Papa John’s",
-  option_3: "Tuna sandwich from Subway",
-  option_4: "None of the above",
-  correct_answer: "option_4",
-  category_id: 1
-  })
-Question.create({
-  question: "If a Jew wanted throw a BBQ and all he had was a non-kosher grill, which method is not correct in order to make the grill kosher?",
-  option_1: "Buy new grates",
-  option_2: "Blow torch the existing grates",
-  option_3: "Flip over the grates and let the fire clean off the remnants",
-  option_4: "Buy a new grill",
+  question: "What prayer is recited over wine before the meal?",
+  option_1: "Hamotzei",
+  option_2: "Havdallah",
+  option_3: "Kiddush",
+  option_4: "Gracetify",
   correct_answer: "option_3",
-  category_id: 1
+  category_id: 32
+  })
+Question.create({
+  question: "How many hallah breads are eaten?",
+  option_1: "1",
+  option_2: "2",
+  option_3: "3",
+  option_4: "4",
+  correct_answer: "option_2",
+  category_id: 32
+  })
+Question.create({
+  question: "Saturday night, what is the name of the prayer that is recited when the Sabbath is leaving?",
+  option_1: "Havdalah",
+  option_2: "Hamotzei",
+  option_3: "Hashem",
+  option_4: "Hastah",
+  correct_answer: "option_1",
+  category_id: 32
   })
 Test.create({
-  title: "Kosher Test",
-  question_id: 1
+  title: "Sabbath Test",
   })

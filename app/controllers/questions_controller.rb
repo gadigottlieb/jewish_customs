@@ -6,6 +6,7 @@ class QuestionsController < ApplicationController
 
   def new
     @question = Question.new
+    @categories = Category.all
   end
 
   def create
@@ -23,6 +24,7 @@ class QuestionsController < ApplicationController
 
   def edit
     @question = Question.find(params[:id])
+    @categories = Category.all
   end
 
   def update
