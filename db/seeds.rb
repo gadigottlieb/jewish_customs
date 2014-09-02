@@ -12,8 +12,7 @@ puts 'CREATED ADMIN USER: ' << user.email
 Category.destroy_all
 Question.destroy_all
 Test.destroy_all
-
-Category.create({
+sabbath_hol = Category.create({
   title: "Sabbath",
   photo: "http://houseofprayermessage.files.wordpress.com/2012/11/shabbat-d8b50b0ccbe7b3633d984114e2cafcb61d315c83-s6-c30.jpg",
   bible_quote: "Thus the heavens and the earth were completed in all their vast array.
@@ -57,7 +56,7 @@ Category.create({
                 the prayer of goodbye to the Sabbath until next week.",
   date:         "Friday Evenings"
   })
-Category.create({
+rosh_hol = Category.create({
   title: "Rosh Hashanah",
   photo:"http://toriavey.com/images/2010/09/HappyRoshHashanah.jpg",
   bible_quote: "Speak to the people of Israel, saying, In the seventh month,
@@ -80,7 +79,7 @@ Category.create({
                 the seal of life by asking for forgiveness.",
   date:         "1st of Tishrei"
   })
-Category.create({
+kippur_hol = Category.create({
   title: "Yom Kippur",
   photo: "http://timesofrefreshingontheoldpaths.files.wordpress.com/2012/09/yomkippur.jpg",
   bible_quote: "On the tenth day of this seventh month you shall have a holy convocation
@@ -112,7 +111,7 @@ Category.create({
                 cleanses our soul. This is the purpose of the prohibitions.",
   date:         "10th of Tishrei"
   })
-Category.create({
+sukkot_hol = Category.create({
   title: "Sukkot",
   photo: "http://upload.wikimedia.org/wikipedia/commons/thumb/6/62/EtrogC.jpg/300px-EtrogC.jpg",
   bible_quote: "After the ingathering from your threshing floor and your vat,
@@ -148,7 +147,7 @@ Category.create({
                  during morning prayer throughout the holiday.",
   date:          "15th of Tishrei"
   })
-Category.create({
+hannuka_hol = Category.create({
   title: 				"Hanukkah",
   photo:         "http://www.wallpapers-christmas.com/images/wmwallpapers/Happy-Hanukkah-Menorah-1.jpeg",
   bible_quote:   "Many people define major Jewish holidays as those that feature traditional holiday meals,
@@ -184,7 +183,7 @@ Category.create({
   date:           "25th Day of Kislev to the 2nd Day of Tevet"
   })
 
-Category.create({
+purim_hol = Category.create({
   title:         "Purim",
   photo:         "http://www.kosherkingdom.co.uk/site/wp-content/uploads/purim.jpg",
   bible_quote:   "As the days wherein the Jews rested from their enemies, and the month which was turned unto
@@ -213,7 +212,7 @@ Category.create({
                   only Jerusalem and a few other cities celebrate Purim on the 15th of Adar.",
   date:          "14th of Adar"
   })
-Category.create({
+tu_hol = Category.create({
   title: 			"Tu B’shvat",
   photo:       "http://www.loveisrael.com/wp-content/uploads/2014/01/tubshvat-400x1400.jpg",
   bible_quote: "There is no direct Biblical Source but Tu Bishvat appears in the Mishnah in Tractate
@@ -231,7 +230,7 @@ Category.create({
                 in celebration.",
   date:        "15th Day of Sh'vat"
   })
-Category.create({
+passover_hol = Category.create({
   title:       "Passover",
   photo:     "http://www.sunjournal.com/files/imagecache/story_large/2014/03/26/BSECeatsPassover2P040614.jpg",
   bible_quote: "In the first month, on the fourteenth day of the month between the two evenings is the Lord's Passover.
@@ -285,7 +284,7 @@ Category.create({
                 has handled chametz is generally put away and not used during Passover.",
   date:        "15th of Nisan"
     })
-Category.create({
+shavuot_hol = Category.create({
   title:       "Shavuot",
   photo:       "http://torahinmyheart.com/yahoo_site_admin/assets/images/Torah_Scroll_from_123rf.175212641.jpg",
   bible_quote: "'You shall celebrate the Feast of Weeks, that is, the first fruits of the wheat harvest, and the Feast of Ingathering at the turn of the year.'
@@ -329,7 +328,7 @@ Category.create({
                 This points to the unity of the Written and Oral Torahs.",
   date:         "6th of Sivan"
   })
-Category.create({
+tish_hol = Category.create({
   title: 			"Tisha B’av",
   photo:	     "http://ohr.edu/special/9av/9av.jpg",
   bible_quote: "According to Rabbinic tradition (as seen in the Mishnah Taanit 4:6), the sin of the Ten Spies produced the annual
@@ -371,69 +370,69 @@ Category.create({
                 discuss the laws of mourning.",
   date:        "9th of Av"
   })
-Question.create({
+kosher = Category.create({title: "Kosher"})
+q1 = Question.create({
   question: "What is the purpose of the Sabbath?",
   option_1: "To eat food",
   option_2: "Day of Rest",
   option_3: "Catch up on TV shows",
   option_4: "Play sports",
   correct_answer: "option_2",
-  category_id: 32
+  category_id: 44
   })
-Question.create({
+q2 = Question.create({
   question: "When does the Sabbath begin?",
   option_1: "Friday morning",
   option_2: "Friday night",
   option_3: "Saturday morning",
   option_4: "Sunday morning",
   correct_answer: "option_2",
-  category_id: 32
+  category_id: 44
   })
-Question.create({
+q3 = Question.create({
   question: "What action marks the start of the Sabbath?",
   option_1: "Eating the hallah bread",
   option_2: "Blessing of the wine",
   option_3: "Lighting the Sabbath candles",
   option_4: "Going to synagogue for prayer services",
   correct_answer: "option_2",
-  category_id: 32
+  category_id: 44
   })
-Question.create({
+q4 = Question.create({
   question: "What song does the husband sing to his wife before the friday night meal?",
   option_1: "Eshet Chayil",
   option_2: "Woman of Valor",
   option_3: "I Love You Baby",
   option_4: "a and b",
   correct_answer: "option_4",
-  category_id: 32
+  category_id: 44
   })
-Question.create({
+q5 = Question.create({
   question: "What prayer is recited over wine before the meal?",
   option_1: "Hamotzei",
   option_2: "Havdallah",
   option_3: "Kiddush",
   option_4: "Gracetify",
   correct_answer: "option_3",
-  category_id: 32
+  category_id: 44
   })
-Question.create({
+q6 = Question.create({
   question: "How many hallah breads are eaten?",
   option_1: "1",
   option_2: "2",
   option_3: "3",
   option_4: "4",
   correct_answer: "option_2",
-  category_id: 32
+  category_id: 44
   })
-Question.create({
+q7 = Question.create({
   question: "Saturday night, what is the name of the prayer that is recited when the Sabbath is leaving?",
   option_1: "Havdalah",
   option_2: "Hamotzei",
   option_3: "Hashem",
   option_4: "Hastah",
   correct_answer: "option_1",
-  category_id: 32
+  category_id: 44
   })
-Test.create({
-  title: "Sabbath Test",
-  })
+sabbath = Test.create({title: "Sabbath Test"})
+sabbath.questions = [q1,q2,q3,q4,q5,q6,q7]
