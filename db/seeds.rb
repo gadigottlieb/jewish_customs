@@ -9,10 +9,11 @@ user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 
 
-Holiday.destroy_all
-Kosher.destroy_all
+Category.destroy_all
+Question.destroy_all
+Test.destroy_all
 
-Holiday.create({
+Category.create({
   title: "Sabbath",
   photo: "http://houseofprayermessage.files.wordpress.com/2012/11/shabbat-d8b50b0ccbe7b3633d984114e2cafcb61d315c83-s6-c30.jpg",
   bible_quote: "Thus the heavens and the earth were completed in all their vast array.
@@ -56,7 +57,7 @@ Holiday.create({
                 the prayer of goodbye to the Sabbath until next week.",
   date:         "Friday Evenings"
   })
-Holiday.create({
+Category.create({
   title: "Rosh Hashanah",
   photo:"http://toriavey.com/images/2010/09/HappyRoshHashanah.jpg",
   bible_quote: "Speak to the people of Israel, saying, In the seventh month,
@@ -79,7 +80,7 @@ Holiday.create({
                 the seal of life by asking for forgiveness.",
   date:         "1st of Tishrei"
   })
-Holiday.create({
+Category.create({
   title: "Yom Kippur",
   photo: "http://timesofrefreshingontheoldpaths.files.wordpress.com/2012/09/yomkippur.jpg",
   bible_quote: "On the tenth day of this seventh month you shall have a holy convocation
@@ -111,7 +112,7 @@ Holiday.create({
                 cleanses our soul. This is the purpose of the prohibitions.",
   date:         "10th of Tishrei"
   })
-Holiday.create({
+Category.create({
   title: "Sukkot",
   photo: "http://upload.wikimedia.org/wikipedia/commons/thumb/6/62/EtrogC.jpg/300px-EtrogC.jpg",
   bible_quote: "After the ingathering from your threshing floor and your vat,
@@ -147,7 +148,7 @@ Holiday.create({
                  during morning prayer throughout the holiday.",
   date:          "15th of Tishrei"
   })
-Holiday.create({
+Category.create({
   title: 				"Hanukkah",
   photo:         "http://www.wallpapers-christmas.com/images/wmwallpapers/Happy-Hanukkah-Menorah-1.jpeg",
   bible_quote:   "Many people define major Jewish holidays as those that feature traditional holiday meals,
@@ -183,7 +184,7 @@ Holiday.create({
   date:           "25th Day of Kislev to the 2nd Day of Tevet"
   })
 
-Holiday.create({
+Category.create({
   title:         "Purim",
   photo:         "http://www.kosherkingdom.co.uk/site/wp-content/uploads/purim.jpg",
   bible_quote:   "As the days wherein the Jews rested from their enemies, and the month which was turned unto
@@ -212,7 +213,7 @@ Holiday.create({
                   only Jerusalem and a few other cities celebrate Purim on the 15th of Adar.",
   date:          "14th of Adar"
   })
-Holiday.create({
+Category.create({
   title: 			"Tu B’shvat",
   photo:       "http://www.loveisrael.com/wp-content/uploads/2014/01/tubshvat-400x1400.jpg",
   bible_quote: "There is no direct Biblical Source but Tu Bishvat appears in the Mishnah in Tractate
@@ -230,7 +231,7 @@ Holiday.create({
                 in celebration.",
   date:        "15th Day of Sh'vat"
   })
-Holiday.create({
+Category.create({
   title:       "Passover",
   photo:     "http://www.sunjournal.com/files/imagecache/story_large/2014/03/26/BSECeatsPassover2P040614.jpg",
   bible_quote: "In the first month, on the fourteenth day of the month between the two evenings is the Lord's Passover.
@@ -284,7 +285,7 @@ Holiday.create({
                 has handled chametz is generally put away and not used during Passover.",
   date:        "15th of Nisan"
     })
-Holiday.create({
+Category.create({
   title:       "Shavuot",
   photo:       "http://torahinmyheart.com/yahoo_site_admin/assets/images/Torah_Scroll_from_123rf.175212641.jpg",
   bible_quote: "'You shall celebrate the Feast of Weeks, that is, the first fruits of the wheat harvest, and the Feast of Ingathering at the turn of the year.'
@@ -328,7 +329,7 @@ Holiday.create({
                 This points to the unity of the Written and Oral Torahs.",
   date:         "6th of Sivan"
   })
-Holiday.create({
+Category.create({
   title: 			"Tisha B’av",
   photo:	     "http://ohr.edu/special/9av/9av.jpg",
   bible_quote: "According to Rabbinic tradition (as seen in the Mishnah Taanit 4:6), the sin of the Ten Spies produced the annual
@@ -370,64 +371,62 @@ Holiday.create({
                 discuss the laws of mourning.",
   date:        "9th of Av"
   })
-Kosher.create({
-  kosher_description:  "Kosher is the set of Jewish religious dietary laws. Food that may be consumed
-                        according to Jewish law is termed kosher in English but comes from the Hebrew
-                        word kasher, which means ‘fit’ to eat.  Most of the basic laws of kashrut are
-                        derived from the Torah’s Books of Leviticus and Deuteronomy. Their details and
-                        practical application, are set down in the oral law, which is now the Mishnah and Talmud.",
-  animal_quote:        "And every beast that parts the hoof, and has the hoof cloven into two, and chews the
-                        cud among the beasts, that you may eat.",
-  animal_src:          "Deuteronomy 14:6",
-  animal_description:  "Even if an animal lacks only one of these characteristics it can not be eaten.
-                        Those animals that chew the cud, eat vegetation; and animals with split hooves are
-                        usually peaceful animals. Hence the two specifications rule out all animals that prey
-                        on others. Cows, sheep, goats, and deer are all kosher animals. Pigs, rabbits, squirrels,
-                        bears, dogs, cats, camels, and horses are not.",
-  fish_quote:          "These you may eat, whatever is in the water: all that have fins and scales, those in the
-                        water, in the seas or in the rivers, you may eat.",
-  fish_src:            "Leviticus 11:9",
-  fish_description:    "This rule has sometimes caused problems as some scales and fins are rather rudimentary
-                        and so there has been considerable debate about sturgeon and whether it is permitted to
-                        eat caviar.",
-  bird_quote:          "These are the birds you are to regard as unclean and not eat because they are unclean:
-                        the eagle, the vulture, the black vulture. The red kite, any kind of black kite. Any kind
-                        of raven. The horned owl, the screech owl, the gull, any kind of hawk. The little owl, the
-                        cormorant, the great owl. The white owl, the desert owl, the osprey. The stork, any kind of
-                        heron, the hoopoe and the bat.",
-  bird_src:            "Leviticus 11:13-19",
-  bird_description:    "Instead of giving a general rule for birds, the Bible lists the names of the species which
-                        are not permitted to be eaten. The Mishnah states that these forbidden birds seize their food
-                        in their claws and have an extra talon,6. meaning that these are birds of prey. The problem of
-                        relying on a list of names is that for several of these names, we are not sure of their exact
-                        modern equivalents. And secondly. Is it right that when any new species is found, that it is
-                        automatically kosher because it was not on the original list of those specifically forbidden.
-                        This caused a problem with American turkeys. Some Rabbis approved their suitability for eating,
-                        but a few did not.",
-  remaining_creatures: "Almost any other creature apart from those listed above is not permitted to be eaten. All
-                        reptiles, amphibians and invertebrate animals are forbidden to us. In the latter category are
-                        included shellfish. The only other creatures that the Bible permits are a small group of locusts.",
-  slaughter:           "Animals and birds must be slaughtered by a trained individual using a special method of slaughter.
-                        The slaughterer must sever the jugular vein, carotid artery, esophagus, and trachea in a single
-                        continuous cutting movement with an unserrated sharp knife. Failure to follow this criteria renders
-                        the meat of the animal unsuitable. The body must be checked after slaughter to confirm that the animal
-                        had no medical condition or defect. If the animal did have any issue, the meat would not be kosher.",
-  utensils:            "Utensils used for non-kosher foods become non-kosher, and make even otherwise kosher food prepared with
-                        them non-kosher. Some such utensils, depending on the material they are made from, can be made suitable
-                        for preparing kosher food again by immersion in boiling water or by the application of a blowtorch.",
-  milk_and_meat:       "Meat and milk cannot be mixed. The source for this is found in Deuteronomy 14:21 where it mentions ‘You
-                        shall not cook a kid in its mother’s milk’. From this it is understood that meat and dairy products cannot
-                        be served at the same meal, served or cooked in the same utensils, or stored together. Observant Jews have
-                        separate sets of dishes, and sometimes different kitchens, for meat and milk, and wait anywhere between one
-                        and six hours after eating meat before consuming milk products.",
-  kosher_certifications: "There are many food products that have kosher certifications symbols. Manufacturers sometimes identify
-                          the products that have received such certification by adding these symbols to the label.  These symbols
-                          are known in Judaism as hechsherim. Due to differences in kashrut standards held by different organizations,
-                          the hechsheirim of certain Jewish authorities may at times be considered invalid by other Jewish authorities.
-                          To determine if certain items are kosher, below are examples of kosher symbols that can be found on many
-                          products throughout America.",
-  ortho_union:          "http://www.nachas.org/BethYehuda/koshsym/Image1.gif",
-  organized_kosher:     "http://www.nachas.org/BethYehuda/koshsym/Image2.gif",
-  star_k:               "http://www.nachas.org/BethYehuda/koshsym/Image3.gif",
-  kof_kosher:           "http://www.nachas.org/BethYehuda/koshsym/Image4.gif"
+
+Question.create({
+  question: "Based on Jewish Law, a Jew can eat the which animal listed below?",
+  option_1: "Pig",
+  option_2: "Bear",
+  option_3: "Cow",
+  option_4: "Rabbit",
+  correct_answer: "option_3",
+  category_id: 1
+  })
+Question.create({
+  question: "Based on Jewish Law, a Jew cannot eat which type of water fish listed below?",
+  option_1: "Tuna",
+  option_2: "Shrimp",
+  option_3: "Salmon",
+  option_4: "Carp",
+  correct_answer: "option_2",
+  category_id: 1
+  })
+Question.create({
+  question: "Which bird is Kosher?",
+  option_1: "Chicken",
+  option_2: "Hawk",
+  option_3: "Owl",
+  option_4: "Raven",
+  correct_answer: "option_1",
+  category_id: 1
+  })
+Question.create({
+  question: "A kosher animal has to go through a major step before being classified as kosher. What is this step?",
+  option_1: "Rabbi or slaughterer must bless the kosher animal.",
+  option_2: "Rabbi or slaughterer must shoot the animal in the head.",
+  option_3: "Rabbi or slaughterer must spear the animals heart.",
+  option_4: "Rabbi or slaughterer must sever the head from the neck with sharp knife.",
+  correct_answer: "option_4",
+  category_id: 1
+  })
+Question.create({
+  question: "A Jew can eat which of the following meals:",
+  option_1: "Cheeseburger from McDonalds",
+  option_2: "Meatball Pepperoni Pizza from Papa John’s",
+  option_3: "Tuna sandwich from Subway",
+  option_4: "None of the above",
+  correct_answer: "option_4",
+  category_id: 1
+  })
+Question.create({
+  question: "If a Jew wanted throw a BBQ and all he had was a non-kosher grill, which method is not correct in order to make the grill kosher?",
+  option_1: "Buy new grates",
+  option_2: "Blow torch the existing grates",
+  option_3: "Flip over the grates and let the fire clean off the remnants",
+  option_4: "Buy a new grill",
+  correct_answer: "option_3",
+  category_id: 1
+  })
+Test.create({
+  title: "Kosher Test",
+  question_id: 1
   })

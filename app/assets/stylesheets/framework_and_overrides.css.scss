@@ -80,10 +80,6 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
-.holiday-index{
-  display: inline-block;
-  text-align: center;
-}
 //Holiday Index Photos
 #holiday-index-photo{
   height: 150px;
@@ -92,7 +88,7 @@ section {
 }
 
 // Holiday Show Page
-#holiday-show-photo{
+#show-category-photo{
   height:300px;
   width: 350px;
 }

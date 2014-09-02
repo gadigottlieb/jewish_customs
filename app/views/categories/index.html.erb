@@ -1,0 +1,11 @@
+<%= link_to 'New Category', new_category_path(@category) %>
+<div class="holiday">
+  <% @categories.each do |category| %>
+  <div id="<%= category.id %>">
+    <h1><%= category.title %></h1>
+    <div id="holiday-index-photo">
+      <%= link_to(image_tag(category.photo), category_path(category)) %>
+    </div>
+  </div>
+  <% end %>
+</div>

@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140829035620) do
+ActiveRecord::Schema.define(version: 20140902142451) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "holidays", force: true do |t|
+  create_table "categories", force: true do |t|
     t.string "title"
     t.string "photo"
     t.text   "bible_quote"
@@ -26,26 +26,23 @@ ActiveRecord::Schema.define(version: 20140829035620) do
     t.string "date"
   end
 
-  create_table "koshers", force: true do |t|
-    t.text   "kosher_description"
-    t.text   "animal_quote"
-    t.string "animal_src"
-    t.text   "animal_description"
-    t.text   "fish_quote"
-    t.string "fish_src"
-    t.text   "fish_description"
-    t.text   "bird_quote"
-    t.string "bird_src"
-    t.text   "bird_description"
-    t.text   "remaining_creatures"
-    t.text   "slaughter"
-    t.text   "utensils"
-    t.text   "milk_and_meat"
-    t.text   "kosher_certifications"
-    t.string "ortho_union"
-    t.string "organized_kosher"
-    t.string "star_k"
-    t.string "kof_kosher"
+  create_table "questions", force: true do |t|
+    t.text    "question"
+    t.text    "option_1"
+    t.text    "option_2"
+    t.text    "option_3"
+    t.text    "option_4"
+    t.string  "correct_answer"
+    t.integer "category_id"
+  end
+
+  create_table "questions_tests", id: false, force: true do |t|
+    t.integer "question_id"
+    t.integer "test_id"
+  end
+
+  create_table "tests", force: true do |t|
+    t.string "title"
   end
 
   create_table "users", force: true do |t|

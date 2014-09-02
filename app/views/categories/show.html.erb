@@ -1,0 +1,28 @@
+<div id="category-show-page">
+  <%= link_to 'Edit', edit_category_path(@category) %>
+  <div id="show-category-title">
+    <h1><%= @category.title %></h1>
+  </div>
+  <div id="show-category-photo">
+    <%= image_tag(@category.photo) %>
+  </div>
+  <div id="bible_quote">
+    <h3>Bible Quote</h3><%= @category.bible_quote %>
+  </div>
+  <div id="bible_src">
+    <h3>Bible Source</h3><%= @category.bible_src %>
+  </div>
+  <div id="date">
+    <h3>Date:</h3><%= @category.date %>
+  </div>
+  <div id="plot">
+    <h1>Plot</h1>
+    <%= @category.plot %>
+  </div>
+  <div id="customs">
+    <h1>Customs</h1>
+    <%= @category.customs %>
+  </div>
+
+  <button name="button"><%=@category.title %> Test</button>
+</div>
