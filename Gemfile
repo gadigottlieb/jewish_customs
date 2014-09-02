@@ -14,6 +14,7 @@ gem 'high_voltage'
 gem 'pg'
 gem 'simple_form'
 gem 'backbars'
+gem 'cancancan', '~> 1.9'
 gem 'therubyracer', :platform=>:ruby
 group :development do
   gem 'better_errors'

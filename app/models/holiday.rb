@@ -1,3 +1,3 @@
 class Holiday < ActiveRecord::Base
-  # validates_presence_of :title
+  # validates :title, :photo, :bible_quote, :bible_src, :plot, :customs, presence: true
 end
