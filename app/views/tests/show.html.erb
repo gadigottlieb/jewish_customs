@@ -1,7 +1,11 @@
-<%= link_to "Edit", edit_test_path%>
+<%= link_to "Edit Test", edit_test_path%>
+<%= link_to "New Question", new_test_question_path(@test) %>
 <h1><%= @test.title %></h1>
+  <ol>
 <% @test.questions.each do |question| %>
-  <h2><%= question.question %></h2>
-  <%= select_tag("questions[#{question.id}]", question.answers_string.html_safe) %>
+    <li><h3><%= question.question %></h3></li>
+    <%= select_tag("questions[#{question.id}]", question.answers_string.html_safe) %>
+    <%= link_to "Edit Question", edit_question_path(question) %>
 <% end %>
+  </ol>
   <%= button_tag "Submit Test" %>

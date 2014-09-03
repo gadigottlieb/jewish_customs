@@ -5,6 +5,7 @@ class QuestionsController < ApplicationController
   end
 
   def new
+    @test = Test.find(params[:test_id])
     @question = Question.new
     @categories = Category.all
   end
@@ -12,7 +13,8 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.create(question_params)
     if @question.save
-      redirect_to category_path(@question)
+      @question.tests << Test.find(params[:test_id])
+      redirect_to test_path(Test.find(params[:test_id]))
     else
       render :new
     end
@@ -30,16 +32,18 @@ class QuestionsController < ApplicationController
   def update
     @question = Question.find(params[:id])
     if @question.update(question_params)
-      redirect_to question_path(@question)
+      @question.tests << Test.find(params[:test_id])
+      redirect_to test_path(Test.find(params[:test_id]))
     else
       render :edit
     end
   end
 
   def destroy
-    @question = Category.find(params[:id])
+    @question = Question.find(params[:id])
+    @test = Test.find(params[:test_id])
     if @question.destroy
-      redirect_to questions_path
+      redirect_to test_questions_path(@test)
     else
       redirect_to question_path
     end
@@ -48,6 +52,6 @@ class QuestionsController < ApplicationController
   private
 
   def question_params
-    params.require(:question).permit(:question, :option_1, :option_2, :option_3, :option_4, :correct_answer)
+    params.require(:question).permit(:question, :option_1, :option_2, :option_3, :option_4, :correct_answer, :category_id)
   end
 end
