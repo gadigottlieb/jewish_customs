@@ -80,6 +80,9 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
+.holiday {
+  display: inline-block;
+}
 //Holiday Index Photos
 #holiday-index-photo{
   height: 150px;
@@ -97,5 +100,16 @@ section {
 
 }
 .kosher-symbols{
-  display: inline-block;
+  display: block;
+}
+
+// New Test Page
+#new-question {
+  input {
+  font-size: 120%;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  width: 500px;
+  text-align: center;
+  }
 }
