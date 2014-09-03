@@ -6,7 +6,6 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
-    # @test = Test.find(params[:test_id])
   end
 
   def new
