@@ -32,8 +32,7 @@ class QuestionsController < ApplicationController
   def update
     @question = Question.find(params[:id])
     if @question.update(question_params)
-      @question.tests << Test.find(params[:test_id])
-      redirect_to test_path(Test.find(params[:test_id]))
+      redirect_to test_path(@question.tests)
     else
       render :edit
     end

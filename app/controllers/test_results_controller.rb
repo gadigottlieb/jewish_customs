@@ -1,7 +1,7 @@
 class TestResultsController < ApplicationController
 
-  def show
-    @test_result = TestResult.find(params[:id])
+  def test_submit
+
   end
 
   def
