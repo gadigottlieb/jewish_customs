@@ -80,8 +80,9 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
-.holiday {
+.category {
   display: inline-block;
+  
 }
 //Holiday Index Photos
 #holiday-index-photo{
@@ -100,7 +101,7 @@ section {
 
 }
 .kosher-symbols{
-  display: block;
+  display: inline-block;
 }
 
 // New Test Page
