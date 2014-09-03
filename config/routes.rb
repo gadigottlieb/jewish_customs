@@ -5,8 +5,7 @@ Rails.application.routes.draw do
   resources :tests, shallow: true do
     resources :questions
   end
-  # resources :questions
   resources :categories
-  resources :test_results
+  post 'test_submit', to: 'test_results#test_submit'
   get 'kosher', to: 'categories#kosher'
 end
