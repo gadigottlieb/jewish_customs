@@ -1,4 +1,6 @@
-<%= link_to 'New Category', new_category_path(@category) %>
+<% if can? :create, @category %>
+  <%= link_to 'New Category', new_category_path(@category) %>
+<% end %>
 <div class="holiday">
   <% @categories.each do |category| %>
   <div id="<%= category.id %>">

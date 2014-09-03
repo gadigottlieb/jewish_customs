@@ -1,3 +1,4 @@
 <%= render 'form' %>
-
-<%= button_to 'Delete', category_path(@category), method: :delete %>
+<% if can? :destroy, @category %>
+  <%= button_to 'Delete', category_path(@category), method: :delete %>
+<% end %>

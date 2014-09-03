@@ -1,5 +1,7 @@
 <div id="category-show-page">
-  <%= link_to 'Edit', edit_category_path(@category) %>
+  <% if can? :update, @category %>
+    <%= link_to 'Edit', edit_category_path(@category) %>
+  <% end %>
   <div id="show-category-title">
     <h1><%= @category.title %></h1>
   </div>
@@ -24,5 +26,5 @@
     <%= @category.customs %>
   </div>
 
-  <%=button_tag "#{@category.title} Test" %> 
+  <%=button_tag "#{@category.title} Test" %>
 </div>
