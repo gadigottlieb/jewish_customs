@@ -378,7 +378,7 @@ q1 = Question.create({
   option_3: "Catch up on TV shows",
   option_4: "Play sports",
   correct_answer: "option_2",
-  category_id: 44
+  category_id: sabbath_hol.id
   })
 q2 = Question.create({
   question: "When does the Sabbath begin?",
@@ -387,7 +387,7 @@ q2 = Question.create({
   option_3: "Saturday morning",
   option_4: "Sunday morning",
   correct_answer: "option_2",
-  category_id: 44
+  category_id: sabbath_hol.id
   })
 q3 = Question.create({
   question: "What action marks the start of the Sabbath?",
@@ -396,7 +396,7 @@ q3 = Question.create({
   option_3: "Lighting the Sabbath candles",
   option_4: "Going to synagogue for prayer services",
   correct_answer: "option_2",
-  category_id: 44
+  category_id: sabbath_hol.id
   })
 q4 = Question.create({
   question: "What song does the husband sing to his wife before the friday night meal?",
@@ -405,7 +405,7 @@ q4 = Question.create({
   option_3: "I Love You Baby",
   option_4: "a and b",
   correct_answer: "option_4",
-  category_id: 44
+  category_id: sabbath_hol.id
   })
 q5 = Question.create({
   question: "What prayer is recited over wine before the meal?",
@@ -414,7 +414,7 @@ q5 = Question.create({
   option_3: "Kiddush",
   option_4: "Gracetify",
   correct_answer: "option_3",
-  category_id: 44
+  category_id: sabbath_hol.id
   })
 q6 = Question.create({
   question: "How many hallah breads are eaten?",
@@ -423,7 +423,7 @@ q6 = Question.create({
   option_3: "3",
   option_4: "4",
   correct_answer: "option_2",
-  category_id: 44
+  category_id: sabbath_hol.id
   })
 q7 = Question.create({
   question: "Saturday night, what is the name of the prayer that is recited when the Sabbath is leaving?",
@@ -432,7 +432,7 @@ q7 = Question.create({
   option_3: "Hashem",
   option_4: "Hastah",
   correct_answer: "option_1",
-  category_id: 44
+  category_id: sabbath_hol.id
   })
 sabbath = Test.create({title: "Sabbath Test"})
 sabbath.questions = [q1,q2,q3,q4,q5,q6,q7]
