@@ -25,6 +25,7 @@
     <h1>Customs</h1>
     <%= @category.customs %>
   </div>
-
-  <%=button_to "#{@category.title} Test", test_path(@test) %>
+  <% if @category.questions.map(&:tests).last %>
+  <%=link_to "#{@category.title} Test", test_path(@category.questions.map(&:tests).last.first.id) %>
+  <%end%>
 </div>
