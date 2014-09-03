@@ -26,6 +26,6 @@
     <%= @category.customs %>
   </div>
   <% if @category.questions.map(&:tests).last %>
-  <%=link_to "#{@category.title} Test", test_path(@category.questions.map(&:tests).last.first.id) %>
+    <%=link_to "#{@category.title} Test", test_path(@category.questions.map(&:tests).last.first.id) %>
   <%end%>
 </div>
