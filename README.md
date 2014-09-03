@@ -1,48 +1,13 @@
 Jewish Customs
 ================
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+This App allows users to sign and up and learn about Jewish Customs. Categories
+range from Jewish Holidays to Kosher laws. As a user, after you finish reading
+and learning about a given topic you can test yourself to see if you actually
+learned anything.
 
-Rails Composer is open source and supported by subscribers. Please join RailsApps to support development of Rails Composer.
+Link to User Stories: https://trello.com/b/gpz3NsgU/gadi-gottlieb-project-3
 
-Problems? Issues?
------------
+Link to ERDs: https://www.lucidchart.com/documents/edit/89a78b63-b23a-4366-8730-ce5e987720ca/0
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
-
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
-
-If the application doesn’t work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
-
-Ruby on Rails
--------------
-
-This application requires:
-
-- Ruby 2.1.2
-- Rails 4.1.5
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
-------------
-
-Credits
--------
-
-License
--------
+Link to Heroku: 
