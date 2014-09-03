@@ -370,7 +370,7 @@ tish_hol = Category.create({
                 discuss the laws of mourning.",
   date:        "9th of Av"
   })
-kosher = Category.create({title: "Kosher"})
+kosher = Category.create({title: "Kosher", photo: "http://cdn.journalism.cuny.edu/blogs.dir/604/files/2012/11/Kosher-Symbol.png"})
 q1 = Question.create({
   question: "What is the purpose of the Sabbath?",
   option_1: "To eat food",
