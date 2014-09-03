@@ -377,7 +377,7 @@ q1 = Question.create({
   option_2: "Day of Rest",
   option_3: "Catch up on TV shows",
   option_4: "Play sports",
-  correct_answer: "option_2",
+  correct_answer: "Day of Rest",
   category_id: sabbath_hol.id
   })
 q2 = Question.create({
@@ -386,7 +386,7 @@ q2 = Question.create({
   option_2: "Friday night",
   option_3: "Saturday morning",
   option_4: "Sunday morning",
-  correct_answer: "option_2",
+  correct_answer: "Friday night",
   category_id: sabbath_hol.id
   })
 q3 = Question.create({
@@ -395,7 +395,7 @@ q3 = Question.create({
   option_2: "Blessing of the wine",
   option_3: "Lighting the Sabbath candles",
   option_4: "Going to synagogue for prayer services",
-  correct_answer: "option_2",
+  correct_answer: "Lighting the Sabbath candles",
   category_id: sabbath_hol.id
   })
 q4 = Question.create({
@@ -404,7 +404,7 @@ q4 = Question.create({
   option_2: "Woman of Valor",
   option_3: "I Love You Baby",
   option_4: "a and b",
-  correct_answer: "option_4",
+  correct_answer: "a and b",
   category_id: sabbath_hol.id
   })
 q5 = Question.create({
@@ -413,7 +413,7 @@ q5 = Question.create({
   option_2: "Havdallah",
   option_3: "Kiddush",
   option_4: "Gracetify",
-  correct_answer: "option_3",
+  correct_answer: "Kiddush",
   category_id: sabbath_hol.id
   })
 q6 = Question.create({
@@ -422,7 +422,7 @@ q6 = Question.create({
   option_2: "2",
   option_3: "3",
   option_4: "4",
-  correct_answer: "option_2",
+  correct_answer: "2",
   category_id: sabbath_hol.id
   })
 q7 = Question.create({
@@ -431,7 +431,7 @@ q7 = Question.create({
   option_2: "Hamotzei",
   option_3: "Hashem",
   option_4: "Hastah",
-  correct_answer: "option_1",
+  correct_answer: "Havdalah",
   category_id: sabbath_hol.id
   })
 sabbath = Test.create({title: "Sabbath Test"})
