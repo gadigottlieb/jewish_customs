@@ -31,6 +31,9 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'rspec-rails'
 end
+
+gem 'rails_12factor', group: :production
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
