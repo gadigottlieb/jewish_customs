@@ -1,4 +1,6 @@
-<%= link_to 'New Test', new_test_path %>
+<% if can? :create, @test %>
+  <%= link_to 'New Test', new_test_path %>
+<% end %>
 <% @tests.each do |t| %>
   <h1><%= link_to t.title, test_path(t) %></h1>
 <% end %>
