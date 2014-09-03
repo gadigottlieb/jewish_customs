@@ -14,6 +14,5 @@ class TestResult < ActiveRecord::Base
       el == answers[i] ? correct_answers += 1 : wrong_answers += 1
     end
     score = (correct_answers.to_f / (correct_answers+wrong_answers).to_f) * 100
-      # return "Your score is #{(correct_answers.to_f / (correct_answers+wrong_answers).to_f) * 100 }%"
   end
 end
