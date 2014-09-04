@@ -10,4 +10,4 @@ Link to User Stories: https://trello.com/b/gpz3NsgU/gadi-gottlieb-project-3
 
 Link to ERDs: https://www.lucidchart.com/documents/edit/89a78b63-b23a-4366-8730-ce5e987720ca/0
 
-Link to Heroku: 
+Link to Heroku: http://jewish-custo-tests.herokuapp.com/
