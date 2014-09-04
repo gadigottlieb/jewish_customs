@@ -5,7 +5,6 @@ class TestResult < ActiveRecord::Base
   def get_grade(test, answers)
     correct_answers = 0
     wrong_answers = 0
-    # @question = Question.find(params[:id])
     @test = Test.find(test)
     tests_answers = @test.questions.map do |a|
       a.correct_answer
