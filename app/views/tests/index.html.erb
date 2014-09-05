@@ -2,5 +2,7 @@
   <%= link_to 'New Test', new_test_path %>
 <% end %>
 <% @tests.each do |t| %>
-  <h1><%= link_to t.title, test_path(t) %></h1>
+  <div id="test-list">
+    <h1><%= link_to t.title, test_path(t) %></h1>
+  </div>
 <% end %>

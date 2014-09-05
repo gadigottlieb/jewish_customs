@@ -1,3 +1,12 @@
-<h3>Welcome to Jewish-Custo-Tests, the best site to test yourself on Jewish Customs.
-  Sign up to explore!</h3>
-<p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
+<section id="welcome">
+  <div class="border">
+    <div class="welcome-message">Do you have a Jewish friend and would like to know more about their religious customs?</div>
+    <div class="welcome-subhead">Well sign up today to begin to learn the many customs the Jewish people have.</div>
+  </div>
+
+  <div class="sign-up">
+    <% if !user_signed_in? %>
+      <%= link_to 'Sign up', new_user_registration_path %>
+    <% end %>
+  </div>
+</section>

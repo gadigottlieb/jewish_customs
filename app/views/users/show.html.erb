@@ -1,14 +1,13 @@
 <div id="user-info">
   <h1><%= @user.name if @user.name %></h1>
   <%= mail_to(@user.email) if @user.email %></p>
+  <div id="users-test">
+    <h4>Tests Taken and Scores</h4>
+    <ol>
+      <% @user.test_results.each do |result| %>
+        <li> Test: <%= Test.find(result.test_id).title %> | Grade: <%= result.score %>%</li>
+      <% end %>
+    </ol>
+  </div>
+  <span class="edit-profile"><%= link_to 'Edit account', edit_user_registration_path %></span>
 </div>
-
-<div id="users-test">
-  <h4>Tests Taken and Scores</h4>
-  <ol>
-    <% @user.test_results.each do |result| %>
-      <li> Test: <%= Test.find(result.test_id).title %> | Grade: <%= result.score %>%</li>
-    <% end %>
-  </ol>
-</div>
-<span class="edit-profile"><%= link_to 'Edit account', edit_user_registration_path %></span>

@@ -1,16 +1,30 @@
 // import the CSS framework
+$blue: #111f6f;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// body
+main{
+  min-height: 800px;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-image: image-url("israel-background.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
 
 // make all images responsive by default
 img {
   @extend .img-responsive;
   margin: 0 auto;
-  }
+}
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
-  }
+}
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
@@ -18,19 +32,19 @@ img {
 .column {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
 .form {
   @extend .col-md-6;
-  }
+}
 .form-centered {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
 .submit {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-lg;
-  }
+}
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
@@ -39,11 +53,11 @@ main {
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
-  }
+}
 section {
   @extend .row;
   margin-top: 20px;
-  }
+}
 
 // Styles for form views
 // using Bootstrap
@@ -106,10 +120,82 @@ section {
 // New Test Page
 #new-question {
   input {
-  font-size: 120%;
-  border: 1px solid #bdbdbd;
-  border-radius: 5px;
-  width: 500px;
-  text-align: center;
+    font-size: 120%;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    width: 500px;
+    text-align: center;
   }
+}
+
+// Welcome page
+
+.border{
+  height: relative;
+  width: relative;
+  background-color: rgba(0, 1, 26, 0.3);
+}
+
+.welcome-message {
+  font-size: 60px;
+  font-weight: 200;
+  color: #FFF;
+  text-align: center;
+  padding: 200px 100px 60px 100px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.welcome-subhead {
+  text-align: center;
+  font-size: 24px;
+  color: #FFF;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.sign-up {
+  text-align: center;
+  padding: 160px;
+}
+
+.sign-up a {
+  color: $blue;
+  font-size: 60px;
+  font-weight: 200;
+  transition: all 0.4s ease;
+  background-color: rgba(247, 232, 160, 0.8);
+  padding: 0 50px 20px 50px;
+  border-radius: 50px;
+}
+
+.sign-up a:hover {
+  background-color: rgba(247, 232, 160, 1.0);
+  padding: 0 70px 20px 70px;
+}
+
+// User Info
+#user-info {
+  background-color: rgba(0, 24, 99, 0.4);
+  color: white;
+  font-weight: bold;
+}
+#kosher-body, .holiday ,#category-show-page, #test-list, .row  {
+  background-color: rgba(0, 22, 76, 0.5);
+  color: white;
+  font-weight: bold;
+}
+
+.category-test {
+  background-color: rgba(0, 22, 76, 0.5);
+  h1, h3, li {
+    color: white;
+  }
+}
+
+#new-question {
+  background-color: rgba(0, 27, 72, 0.39);
+  color: rgb(119, 119, 121);
+  font-weight: bold;
 }

@@ -4,17 +4,19 @@
 <% if can? :create, @question %>
   <%= link_to "New Question", new_test_question_path(@test) %>
 <% end %>
-<h1><%= @test.title %></h1>
-  <ol>
-<%= form_tag('/test_submit', method: 'post') do %>
-  <% @test.questions.each do |question| %>
-      <li><h3><%= question.question %></h3></li>
-      <%= select_tag("questions[#{question.id}]", question.answers_string.html_safe) %>
-      <% if can? :update, @question %>
-        <%= link_to "Edit Question", edit_question_path(question) %>
-      <% end %>
+<div class="category-test">
+  <h1><%= @test.title %></h1>
+    <ol>
+  <%= form_tag('/test_submit', method: 'post') do %>
+    <% @test.questions.each do |question| %>
+        <li><h3><%= question.question %></h3></li>
+        <%= select_tag("questions[#{question.id}]", question.answers_string.html_safe) %>
+        <% if can? :update, @question %>
+          <%= link_to "Edit Question", edit_question_path(question) %>
+        <% end %>
+    <% end %>
+    </ol>
+    <%= hidden_field_tag "test", @test.id %>
+    <%= submit_tag "Submit Test" %>
   <% end %>
-  </ol>
-  <%= hidden_field_tag "test", @test.id %>
-  <%= submit_tag "Submit Test" %>
-<% end %>
+</div>
