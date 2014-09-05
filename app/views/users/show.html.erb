@@ -7,7 +7,9 @@
       <% @user.test_results.each do |result| %>
         <li> Test: <%= Test.find(result.test_id).title %> | Grade: <%= result.score %>%
           <% if can? :destroy, @test_result%>
-            <%= button_to "Delete Result", "/test_result_destroy/#{result.id}", method: :delete %>
+            <div id="delete-test-result">
+              <%= button_to "Delete Test Result", "/test_result_destroy/#{result.id}", method: :delete %>
+            </div>
           <% end %>
         </li>
       <% end %>

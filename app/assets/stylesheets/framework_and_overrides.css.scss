@@ -168,6 +168,7 @@ section {
   background-color: rgba(247, 232, 160, 0.8);
   padding: 0 50px 20px 50px;
   border-radius: 50px;
+  line-height: 20px;
 }
 
 .sign-up a:hover {
@@ -181,7 +182,7 @@ section {
   color: white;
   font-weight: bold;
 }
-#kosher-body, .holiday ,#category-show-page, #test-list, .row  {
+#kosher-body, .holiday ,#category-show-page {
   background-color: rgba(0, 22, 76, 0.5);
   color: white;
   font-weight: bold;
@@ -194,8 +195,33 @@ section {
   }
 }
 
+#test-list {
+  background-color: rgba(0, 22, 76, 0.5);
+  a {
+    color: white;
+  }
+}
+
 #new-question {
   background-color: rgba(0, 27, 72, 0.39);
   color: rgb(119, 119, 121);
   font-weight: bold;
+}
+#delete-test-result, #user-roles{
+  color: #232323;
+}
+//user profile
+#user-info, .edit-profile{
+  a{
+    color: #fff;
+  }
+}
+// user-index
+.row  {
+  background-color: rgba(0, 22, 76, 0.5);
+  color: white;
+  font-weight: bold;
+  a {
+    color: white;
+  }
 }
