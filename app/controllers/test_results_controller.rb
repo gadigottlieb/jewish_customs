@@ -12,4 +12,11 @@ class TestResultsController < ApplicationController
     end
   end
 
+  def test_result_destroy
+    @test_result = TestResult.find(params[:id])
+    if @test_result.destroy
+      redirect_to user_path(current_user)
+    end
+  end
+
 end

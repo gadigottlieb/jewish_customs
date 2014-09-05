@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   end
   resources :categories
   post 'test_submit', to: 'test_results#test_submit'
+  delete 'test_result_destroy/:id', to: 'test_results#test_result_destroy'
   get 'kosher', to: 'categories#kosher'
 end

@@ -5,7 +5,11 @@
     <h4>Tests Taken and Scores</h4>
     <ol>
       <% @user.test_results.each do |result| %>
-        <li> Test: <%= Test.find(result.test_id).title %> | Grade: <%= result.score %>%</li>
+        <li> Test: <%= Test.find(result.test_id).title %> | Grade: <%= result.score %>%
+          <% if can? :destroy, @test_result%>
+            <%= button_to "Delete Result", "/test_result_destroy/#{result.id}", method: :delete %>
+          <% end %>
+        </li>
       <% end %>
     </ol>
   </div>
