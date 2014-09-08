@@ -136,6 +136,13 @@ section {
   background-color: rgba(0, 1, 26, 0.3);
 }
 
+#title {
+  font-size: 140px;
+  text-align: center;
+  font-family: serif;
+  background-color: rgba(0, 22, 76, 0.5);
+}
+
 .welcome-message {
   font-size: 60px;
   font-weight: 200;
@@ -224,9 +231,4 @@ section {
   a {
     color: white;
   }
-}
-#title {
-  font-size: 140px;
-  text-align: center;
-  font-family: serif;
 }
