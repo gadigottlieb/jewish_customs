@@ -1,11 +1,13 @@
 <div class="holiday">
 <% if can? :create, @category %>
-  <%= link_to 'New Category', new_category_path(@category) %>
+  <div id="new-category">
+    <%= link_to 'New Category', new_category_path(@category) %>
+  </div>
 <% end %>
   <% @categories.each do |category| %>
   <div id="<%= category.id %>" class='category'>
-    <h1><%= category.title %></h1>
-    <div id="holiday-index-photo">
+    <div class="category-title"><%= category.title %></div>
+    <div id="category-index-photo">
       <% if category.photo == "http://cdn.journalism.cuny.edu/blogs.dir/604/files/2012/11/Kosher-Symbol.png" %>
         <%= link_to(image_tag("http://cdn.journalism.cuny.edu/blogs.dir/604/files/2012/11/Kosher-Symbol.png"), kosher_path) %>
       <% else %>

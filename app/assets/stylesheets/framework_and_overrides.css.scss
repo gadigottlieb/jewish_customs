@@ -97,18 +97,8 @@ section {
 .category {
   display: inline-block;
 }
-//Holiday Index Photos
-#holiday-index-photo{
-  height: 150px;
-  width: 150px;
-  cursor: pointer;
-}
 
-// Holiday Show Page
-#show-category-photo{
-  height:300px;
-  width: 350px;
-}
+
 #kosher-body{
   text-align: center;
 
@@ -189,7 +179,7 @@ section {
   color: white;
   font-weight: bold;
 }
-#kosher-body, .holiday ,#category-show-page {
+#kosher-body,#category-show-page {
   background-color: rgba(0, 22, 76, 0.5);
   color: white;
   font-weight: bold;

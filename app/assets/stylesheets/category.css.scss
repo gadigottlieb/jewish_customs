@@ -1,0 +1,44 @@
+//Holiday Index Photos
+.category{
+  background-color: rgba(253, 253, 254, 0.8);
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  padding: 0px 20px 0px 25px;
+  margin: 5px 5px 5px 5px;
+}
+// category-size-photo
+#category-index-photo{
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+  margin: 15px 5px 5px 5px;
+
+}
+.category-title{
+  font-size: 25px;
+  font-weight: bold;
+}
+// Holiday Show Page
+#show-category-photo{
+  height:300px;
+  width: 350px;
+  margin: 2px 2px 2px 2px;
+}
+#new-category {
+  border-style: solid;
+  border-color: rgba(253, 253, 254, 0.8);
+  border-width: 3px;
+  width: 200px;
+  padding: 10px 8px;
+  text-align: center;
+  a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover{
+    color: blue;
+  }
+}
