@@ -374,7 +374,12 @@ tish_hol = Category.create({
   date:        "9th of Av"
   })
 kosher_cat = Category.create({title: "Kosher", photo: "http://cdn.journalism.cuny.edu/blogs.dir/604/files/2012/11/Kosher-Symbol.png"})
-q1 = Question.create({
+
+####################
+# Sabbath Questions#
+####################
+
+sab_q1 = Question.create({
   question: "What is the purpose of the Sabbath?",
   option_1: "To eat food",
   option_2: "Day of Rest",
@@ -383,7 +388,7 @@ q1 = Question.create({
   correct_answer: "Day of Rest",
   category_id: sabbath_hol.id
   })
-q2 = Question.create({
+sab_q2 = Question.create({
   question: "When does the Sabbath begin?",
   option_1: "Friday morning",
   option_2: "Friday night",
@@ -392,7 +397,7 @@ q2 = Question.create({
   correct_answer: "Friday night",
   category_id: sabbath_hol.id
   })
-q3 = Question.create({
+sab_q3 = Question.create({
   question: "What action marks the start of the Sabbath?",
   option_1: "Eating the hallah bread",
   option_2: "Blessing of the wine",
@@ -401,7 +406,7 @@ q3 = Question.create({
   correct_answer: "Lighting the Sabbath candles",
   category_id: sabbath_hol.id
   })
-q4 = Question.create({
+sab_q4 = Question.create({
   question: "What song does the husband sing to his wife before the friday night meal?",
   option_1: "Eshet Chayil",
   option_2: "Woman of Valor",
@@ -410,7 +415,7 @@ q4 = Question.create({
   correct_answer: "a and b",
   category_id: sabbath_hol.id
   })
-q5 = Question.create({
+sab_q5 = Question.create({
   question: "What prayer is recited over wine before the meal?",
   option_1: "Hamotzei",
   option_2: "Havdallah",
@@ -419,7 +424,7 @@ q5 = Question.create({
   correct_answer: "Kiddush",
   category_id: sabbath_hol.id
   })
-q6 = Question.create({
+sab_q6 = Question.create({
   question: "How many hallah breads are eaten?",
   option_1: "1",
   option_2: "2",
@@ -428,7 +433,7 @@ q6 = Question.create({
   correct_answer: "2",
   category_id: sabbath_hol.id
   })
-q7 = Question.create({
+sab_q7 = Question.create({
   question: "Saturday night, what is the name of the prayer that is recited when the Sabbath is leaving?",
   option_1: "Havdalah",
   option_2: "Hamotzei",
@@ -437,6 +442,75 @@ q7 = Question.create({
   correct_answer: "Havdalah",
   category_id: sabbath_hol.id
   })
+
+###################
+# Kosher Questions#
+###################
+kosh_q1 = Question.create({
+  question: "What is kosher?",
+  option_1: "Blessed food by a Rabbi",
+  option_2: "Rules to restrict Jews from eating at all restaurants",
+  option_3: "Set of religious dietary laws",
+  option_4: "Jewish witchcraft",
+  correct_answer: "Set of religious dietary laws",
+  category_id: kosher_cat.id
+  })
+kosh_q2 = Question.create({
+  question: "Which bird is kosher?",
+  option_1: "Owl",
+  option_2: "Chicken",
+  option_3: "Hawk",
+  option_4: "Raven",
+  correct_answer: "Chicken",
+  category_id: kosher_cat.id
+  })
+kosh_q3 = Question.create({
+  question: "What sea animal is not kosher?",
+  option_1: "Carp",
+  option_2: "Salmon",
+  option_3: "Shrimp",
+  option_4: "Tuna",
+  correct_answer: "Shrimp",
+  category_id: kosher_cat.id
+  })
+kosh_q4 = Question.create({
+  question: "Which animal is kosher?",
+  option_1: "Pig",
+  option_2: "Tiger",
+  option_3: "Cow",
+  option_4: "Dog",
+  correct_answer: "Cow",
+  category_id: kosher_cat.id
+  })
+kosh_q5 = Question.create({
+  question: "How does one make a kosher animal, permissible to eat?",
+  option_1: "Slaughterer shoots the animal in the head",
+  option_2: "Slaughterer must sever the jugular vein with a sharp knife",
+  option_3: "Slaughterer must bless the animal and put it to sleep",
+  option_4: "Slaughterer must torture the animal to prepare it for death",
+  correct_answer: "Slaughterer must sever the jugular vein with a sharp knife",
+  category_id: kosher_cat.id
+  })
+kosh_q6 = Question.create({
+  question: "Which of the following meals can a Jewish person eat?",
+  option_1: "Cheeseburger from McDonalds",
+  option_2: "Pepperoni Pizza from Papa John's",
+  option_3: "Tuna sandwich from Subway",
+  option_4: "None of the Above",
+  correct_answer: "None of the Above",
+  category_id: kosher_cat.id
+  })
+kosh_q7 = Question.create({
+  question: "If one had a non-kosher grill and wanted to make it kosher, how would they do that?",
+  option_1: "Grill cannot be made kosher, go buy a new one",
+  option_2: "Blow torch the grates",
+  option_3: "Flip the grates over and let the fire clean the grill",
+  option_4: "Scrub down the entire grill with soap",
+  correct_answer: "Blow torch the grates",
+  category_id: kosher_cat.id
+  })
+
+# creating tests
 sabbath = Test.create({title: "Sabbath", category_id: sabbath_hol.id})
 rosh_hashana = Test.create({title: "Rosh Hashanah", category_id: rosh_hol.id})
 yom_kippur = Test.create({title: "Yom Kippur", category_id: kippur_hol.id})
@@ -447,4 +521,7 @@ tubishvat = Test.create({title: "Tu B'shvat", category_id: tu_hol.id})
 passover = Test.create({title: "Passover", category_id: passover_hol.id})
 shavuot = Test.create({title: "Shavuot", category_id: shavuot_hol.id})
 kosher = Test.create({title: "Kosher", category_id: kosher_cat.id})
-sabbath.questions = [q1,q2,q3,q4,q5,q6,q7]
+
+# Assigning questions to tests
+sabbath.questions = [sab_q1,sab_q2,sab_q3,sab_q4,sab_q5,sab_q6,sab_q7]
+kosher.questions = [kosh_q1, kosh_q2, kosh_q3, kosh_q4, kosh_q5, kosh_q6, kosh_q7]
