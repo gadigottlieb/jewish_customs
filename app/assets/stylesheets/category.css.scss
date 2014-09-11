@@ -1,3 +1,5 @@
+$blue: #111f6f;
+
 //Holiday Index Photos
 .category{
   background-color: rgba(253, 253, 254, 0.8);
@@ -39,6 +41,7 @@
     text-decoration: none;
   }
   a:hover{
-    color: blue;
+    color: $blue;
+    transition: 100;
   }
 }

@@ -1,0 +1,55 @@
+$blue: #111f6f;
+
+// Welcome page
+
+.border{
+  height: relative;
+  width: relative;
+  // background-color: rgba(0, 1, 26, 0.3);
+}
+
+#title {
+  font-size: 60px;
+  text-align: center;
+  font-family: serif;
+}
+.welcome-message {
+  font-size: 28px;
+  font-weight: 200;
+  color: #FFF;
+  text-align: center;
+  padding: 100px 100px 60px 100px;
+  // text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.welcome-subhead {
+  text-align: center;
+  font-size: 18px;
+  color: #FFF;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+  // text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.sign-in, .sign-up {
+  text-align: center;
+  padding: 60px;
+}
+
+.sign-in a, .sign-up a {
+  color: $blue;
+  font-size: 40px;
+  font-weight: 100;
+  transition: all 0.8s ease;
+  background-color: rgba(247, 232, 160, 0.8);
+  padding: 0 25px 10px 25px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.sign-in a:hover, .sign-up a:hover {
+  background-color: rgba(247, 232, 160, 1.0);
+  padding: 0 70px 20px 70px;
+  text-decoration: none;
+}
