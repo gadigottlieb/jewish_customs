@@ -1,13 +1,15 @@
 <section id="welcome">
   <div id="title">Jewfo</div>
+
   <div class="border">
-    <div class="welcome-message">Do you have a Jewish friend and would like to know more about their religious customs?</div>
+    <div class="welcome-message">Do you have a Jewish friend and would like to know more about their religion and customs?</div>
     <div class="welcome-subhead">Well sign up today to start learning the many customs the Jewish people have.</div>
   </div>
+  <div class="sign-in">
+      <%= link_to 'Sign in', new_user_session_path %></li>
+      <% if !user_signed_in? %>
+        <%= link_to 'Sign up', new_user_registration_path %>
+      <% end %>
 
-  <div class="sign-up">
-    <% if !user_signed_in? %>
-      <%= link_to 'Sign up', new_user_registration_path %>
-    <% end %>
   </div>
 </section>
