@@ -524,4 +524,4 @@ kosher = Test.create({title: "Kosher", category_id: kosher_cat.id})
 
 # Assigning questions to tests
 sabbath.questions = [sab_q1,sab_q2,sab_q3,sab_q4,sab_q5,sab_q6,sab_q7]
-kosher.questions = [kosh_q1, kosh_q2, kosh_q3, kosh_q4, kosh_q5, kosh_q6, kosh_q7]
+kosher.questions = [kosh_q1,kosh_q2,kosh_q3,kosh_q4,kosh_q5,kosh_q6,kosh_q7]
