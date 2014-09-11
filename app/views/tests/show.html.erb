@@ -1,11 +1,15 @@
 <% if can? :update, @test %>
-  <%= link_to "Edit Test", edit_test_path%>
+  <div id="edit-test-link"><%= link_to "Edit Test", edit_test_path%></div>
 <% end %>
 <% if can? :create, @question %>
-  <%= link_to "New Question", new_test_question_path(@test) %>
+  <div id="new-question-link"><%= link_to "New Question", new_test_question_path(@test) %></div>
 <% end %>
 
-<%= link_to @test.title, category_path(@test.category_id) %>
+<% if @test.title == "Kosher" %>
+  <%= link_to @test.title, kosher_path %>
+<% else %>
+  <%= link_to @test.title, category_path(@test.category_id) %>
+<% end %>
 
 <div class="category-test">
   <h1><%= @test.title %> Test</h1>
