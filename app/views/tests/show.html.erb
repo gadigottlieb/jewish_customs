@@ -4,8 +4,11 @@
 <% if can? :create, @question %>
   <%= link_to "New Question", new_test_question_path(@test) %>
 <% end %>
+
+<%= link_to @test.title, category_path(@test.category_id) %>
+
 <div class="category-test">
-  <h1><%= @test.title %></h1>
+  <h1><%= @test.title %> Test</h1>
     <ol>
   <%= form_tag('/test_submit', method: 'post') do %>
     <% @test.questions.each do |question| %>

@@ -8,7 +8,6 @@
 # user = CreateAdminService.new.call
 # puts 'CREATED ADMIN USER: ' << user.email
 
-User.destroy_all
 User.create(email: 'gadigottlieb@gmail.com', password: 'hello123', password_confirmation: 'hello123', name: 'Gadi Gottlieb', role: 2)
 
 
@@ -218,7 +217,7 @@ purim_hol = Category.create({
   })
 tu_hol = Category.create({
   title: 			"Tu B’shvat",
-  photo:       "http://www.loveisrael.com/wp-content/uploads/2014/01/tubshvat-400x1400.jpg",
+  photo:       "http://3.bp.blogspot.com/-AfgrGyozHzA/UOw_lOrBXwI/AAAAAAAAEqo/sbyMj8jv_T8/s1600/tubshvatfruit.jpg",
   bible_quote: "There is no direct Biblical Source but Tu Bishvat appears in the Mishnah in Tractate
                 Rosh Hashanah as one of the four new years in the Jewish calendar. The discussion of
                 when the New Year occurs was a source of debate among the rabbis: 'And there are four new year dates:
@@ -334,7 +333,7 @@ shavuot_hol = Category.create({
   })
 tish_hol = Category.create({
   title: 			"Tisha B’av",
-  photo:	     "http://ohr.edu/special/9av/9av.jpg",
+  photo:	     "http://www.boweryjews.com/wp-content/uploads/2014/08/photo-3.jpg",
   bible_quote: "According to Rabbinic tradition (as seen in the Mishnah Taanit 4:6), the sin of the Ten Spies produced the annual
                 fast day of Tisha B'Av. When the Israelites accepted the false report, they wept over the false belief that God
                 was setting them up for defeat. The night that the people cried was the ninth of Av, which became a day of weeping
@@ -374,7 +373,7 @@ tish_hol = Category.create({
                 discuss the laws of mourning.",
   date:        "9th of Av"
   })
-kosher = Category.create({title: "Kosher", photo: "http://cdn.journalism.cuny.edu/blogs.dir/604/files/2012/11/Kosher-Symbol.png"})
+kosher_cat = Category.create({title: "Kosher", photo: "http://cdn.journalism.cuny.edu/blogs.dir/604/files/2012/11/Kosher-Symbol.png"})
 q1 = Question.create({
   question: "What is the purpose of the Sabbath?",
   option_1: "To eat food",
@@ -438,5 +437,14 @@ q7 = Question.create({
   correct_answer: "Havdalah",
   category_id: sabbath_hol.id
   })
-sabbath = Test.create({title: "Sabbath Test"})
+sabbath = Test.create({title: "Sabbath", category_id: sabbath_hol.id})
+rosh_hashana = Test.create({title: "Rosh Hashanah", category_id: rosh_hol.id})
+yom_kippur = Test.create({title: "Yom Kippur", category_id: kippur_hol.id})
+sukkot = Test.create({title: "Sukkot", category_id: sukkot_hol.id})
+hanukkah = Test.create({title: "Hanukkah", category_id: hannuka_hol.id})
+purim = Test.create({title: "Purim", category_id: purim_hol.id})
+tubishvat = Test.create({title: "Tu B'shvat", category_id: tu_hol.id})
+passover = Test.create({title: "Passover", category_id: passover_hol.id})
+shavuot = Test.create({title: "Shavuot", category_id: shavuot_hol.id})
+kosher = Test.create({title: "Kosher", category_id: kosher_cat.id})
 sabbath.questions = [q1,q2,q3,q4,q5,q6,q7]
