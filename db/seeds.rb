@@ -23,15 +23,18 @@ sabbath_hol = Category.create({
                 day he rested from all his work. Then God blessed the seventh day and made it holy,
                 because on it he rested from all the work of creating that he had done.",
   bible_src:   "Genesis 2:1-3",
-  plot:         "The purpose of the Sabbath is a day of rest.
-                God finished creating the world in six day and rested on the seventh.
-                We are thus commanded to observe the Sabbath. The source for this is in the Ten Commandments.
-                Commandment four states: ‘Remember the Sabbath day, to keep it holy. Six days you shall labor,
-                and do all your work, but the seventh day is a Sabbath to the LORD your God. On it you shall
-                not do any work, you, or your son, or your daughter, your male servant, or your female servant,
-                or your livestock, or the sojourner who is within your gates. For in six days the LORD made
-                heaven and earth, the sea, and all that is in them, and rested on the seventh day. Therefore
-                the LORD blessed the Sabbath day and made it holy.’(Exodus 20:8-11)",
+  plot:         "The Sabbath (or Shabbat, as it is called in Hebrew) is one of the best known and least understood of all
+                Jewish observances. People who do not observe Shabbat think of it as a day filled with stifling restrictions,
+                or as a day of prayer like the Christian Sabbath. But to those who observe Shabbat, it is a precious gift from God,
+                a day of great joy eagerly awaited throughout the week, a time when we can set aside all of our weekday concerns and
+                devote ourselves to higher pursuits. The purpose of the Sabbath is a day of rest. It is the most important ritual
+                observance in Judaism and is the only ritual observance instituted in the Ten Commandments.  God finished creating
+                the world in six day and rested on the seventh. We are thus commanded to observe the Sabbath. The source for this is
+                in the Ten Commandments. Commandment four states: ‘Remember the Sabbath day, to keep it holy. Six days you shall labor,
+                and do all your work, but the seventh day is a Sabbath to the Lord your God. On it you shall not do any work, you, or
+                your son, or your daughter, your male servant, or your female servant, or your livestock, or the sojourner who is within
+                your gates. For in six days the Lord made heaven and earth, the sea, and all that is in them, and rested on the seventh day.
+                Therefore the Lord blessed the Sabbath day and made it holy.‘(Exodus 20:8-11)",
   customs:     "Friday night the Sabbath begins. No work can be done at all. Work is defined as
                 anything one does during the week that pertains to their normal life activity.
                 So a person cannot deal in business, use electronics, turn on lights, etc.
@@ -411,8 +414,8 @@ sab_q4 = Question.create({
   option_1: "Eshet Chayil",
   option_2: "Woman of Valor",
   option_3: "I Love You Baby",
-  option_4: "a and b",
-  correct_answer: "a and b",
+  option_4: "A and B",
+  correct_answer: "A and B",
   category_id: sabbath_hol.id
   })
 sab_q5 = Question.create({
@@ -441,6 +444,428 @@ sab_q7 = Question.create({
   option_4: "Hastah",
   correct_answer: "Havdalah",
   category_id: sabbath_hol.id
+  })
+sab_q8 = Question.create({
+  question: "What is the Hebrew word for Sabbath?",
+  option_1: "Sababah",
+  option_2: "Shabbat",
+  option_3: "Sabbah",
+  option_4: "Shoppah",
+  correct_answer: "Shabbat",
+  category_id: sabbath_hol.id
+  })
+sab_q9 = Question.create({
+  question: "How many days did it take God to create the world?",
+  option_1: "4",
+  option_2: "5",
+  option_3: "6",
+  option_4: "7",
+  correct_answer: "6",
+  category_id: sabbath_hol.id
+  })
+sab_q10 = Question.create({
+  question: "How many hallah breads and meals are eaten over the Sabbath?",
+  option_1: "1 meal and 2 hallah breads",
+  option_2: "2 meals and 4 hallah breads",
+  option_3: "3 meals and 6 hallah breads",
+  option_4: "4 meals and 8 hallah breads",
+  correct_answer: "2 meals and 4 hallah breads",
+  category_id: sabbath_hol.id
+  })
+
+#############################
+#  Rosh Hashanah Questions  #
+#############################
+
+rosh_q1 = Question.create({
+  question: "What is another name for Rosh Hashanah?",
+  option_1: "Independence Day",
+  option_2: "Judgement Day",
+  option_3: "Atonement Day",
+  option_4: "Marking Day",
+  correct_answer: "Judgement Day",
+  category_id: rosh_hol.id
+  })
+rosh_q2 = Question.create({
+  question: "What Hebrew date does Rosh Hashanah fall out on?",
+  option_1: "1 Tishrei",
+  option_2: "1 Kislev",
+  option_3: "1 Elul",
+  option_4: "1 Adar",
+  correct_answer: "1 Tishrei",
+  category_id: rosh_hol.id
+  })
+rosh_q3 = Question.create({
+  question: "What fruit is dipped in honey?",
+  option_1: "Pear",
+  option_2: "Peach",
+  option_3: "Mango",
+  option_4: "Apple",
+  correct_answer: "Apple",
+  category_id: rosh_hol.id
+  })
+rosh_q4 = Question.create({
+  question: "Why do we dip apples in honey?",
+  option_1: "Apples are bitter in September",
+  option_2: "Honey has ability to clear the head",
+  option_3: "For a sweet new year",
+  option_4: "To remember the bees",
+  correct_answer: "For a sweet new year",
+  category_id: rosh_hol.id
+  })
+rosh_q5 = Question.create({
+  question: "Why is a shofar blasted on Rosh Hashanah?",
+  option_1: "For repentance",
+  option_2: "To disrupt prayer service",
+  option_3: "So kids will ask questions",
+  option_4: "To scare people",
+  correct_answer: "For repentance",
+  category_id: rosh_hol.id
+  })
+
+########################
+# Yom Kippur Questions #
+########################
+
+kip_q1 = Question.create({
+  question: "What is another name for Yom Kippur?",
+  option_1: "Day of Fasting",
+  option_2: "Day of Atonement",
+  option_3: "Day of Awakening",
+  option_4: "Day of Eating",
+  correct_answer: "Day of Atonement",
+  category_id: kippur_hol.id
+  })
+kip_q2 = Question.create({
+  question: "According to Jewish tradition, what does God do on Yom Kippur?",
+  option_1: "Judge each person",
+  option_2: "Seal every person's fate for the upcoming year",
+  option_3: "Protect every person's fate for the upcoming year",
+  option_4: "Nothing, therer is no God",
+  correct_answer: "Seal every person's fate for the upcoming year",
+  category_id: kippur_hol.id
+  })
+kip_q3 = Question.create({
+  question: "What can't a person do on Yom Kippur?",
+  option_1: "Eat, Drink, or wear leather",
+  option_2: "Bath, wash, or annoint oneself with perfume or lotion",
+  option_3: "Have sexual relations",
+  option_4: "None of the Above",
+  correct_answer: "None of the Above",
+  category_id: kippur_hol.id
+  })
+kip_q4 = Question.create({
+  question: "What is the purpose of the prohibitions?",
+  option_1: "Cleanse our souls",
+  option_2: "No reason what so ever",
+  option_3: "For fun",
+  option_4: "To make us stronger",
+  correct_answer: "Cleanse our souls",
+  category_id: kippur_hol.id
+  })
+kip_q5 = Question.create({
+  question: "What is the Hebrew date Yom Kippur falls out on?",
+  option_1: "7 Tishrei",
+  option_2: "8 Tishrei",
+  option_3: "9 Tishrei",
+  option_4: "10 Tishrei",
+  correct_answer: "10 Tishrei",
+  category_id: kippur_hol.id
+  })
+
+####################
+# Sukkot Questions #
+####################
+
+sukkot_q1 = Question.create({
+  question: "What is the Hebrew date Sukkot falls out on?",
+  option_1: "13 Tishrei",
+  option_2: "14 Tishrei",
+  option_3: "15 Tishrei",
+  option_4: "16 Tishrei",
+  correct_answer: "15 Tishrei",
+  category_id: sukkot_hol.id
+  })
+sukkot_q2 = Question.create({
+  question: "What is another name for Sukkot?",
+  option_1: "Feast of Booths",
+  option_2: "Feast of Feasts",
+  option_3: "Feast of Tabernacles",
+  option_4: "A and C",
+  correct_answer: "A and C",
+  category_id: sukkot_hol.id
+  })
+sukkot_q3 = Question.create({
+  question: "What was the Cloud of Glory?",
+  option_1: "Cloud that produced water in the desert",
+  option_2: "Cloud that protected the Jews from harm in the desert",
+  option_3: "Cloud that fogged up the desert",
+  option_4: "Cloud that served the Jews",
+  correct_answer: "Cloud that protected the Jews from harm in the desert",
+  category_id: sukkot_hol.id
+  })
+sukkot_q4 = Question.create({
+  question: "What is the name of the citron fruit that is part of the four species?",
+  option_1: "Eltag",
+  option_2: "Ebrew",
+  option_3: "Ebron",
+  option_4: "Etrog",
+  correct_answer: "Etrog",
+  category_id: sukkot_hol.id
+  })
+sukkot_q5 = Question.create({
+  question: "How many years did the Jews wonder the desert after they were freed from Egypt?",
+  option_1: "10",
+  option_2: "20",
+  option_3: "30",
+  option_4: "40",
+  correct_answer: "40",
+  category_id: sukkot_hol.id
+  })
+
+#####################
+# Hanukah Questions #
+#####################
+
+hannuka_q1 = Question.create({
+  question: "What is the Hebrew date Hanukkah falls out on?",
+  option_1: "25 Kislev",
+  option_2: "26 Kislev",
+  option_3: "1 Tevet",
+  option_4: "2 Tevet",
+  correct_answer: "25 Kislev",
+  category_id: hannuka_hol.id
+  })
+hannuka_q2 = Question.create({
+  question: "How many nights are there during the holiday of Hanukkah?",
+  option_1: "6",
+  option_2: "7",
+  option_3: "8",
+  option_4: "9",
+  correct_answer: "8",
+  category_id: hannuka_hol.id
+  })
+hannuka_q3 = Question.create({
+  question: "What is the extra candle used to light all other candles called?",
+  option_1: "Samah",
+  option_2: "Shamash",
+  option_3: "Shamoo",
+  option_4: "Samson",
+  correct_answer: "Shamash",
+  category_id: hannuka_hol.id
+  })
+hannuka_q4 = Question.create({
+  question: "Why do we light 8 candles over 8 nights?",
+  option_1: "8 is an important number in the Jewish religion",
+  option_2: "After the revolution, the Priests lit the Menorah and it burned for 8 days",
+  option_3: "To get 8 gifts from our parents",
+  option_4: "So children will ask questions",
+  correct_answer: "After the revolution, the Priests lit the Menorah and it burned for 8 days",
+  category_id: hannuka_hol.id
+  })
+hannuka_q5 = Question.create({
+  question: "Why do Jews light the menorah by a window or front door?",
+  option_1: "To publicize the miracle that God performed for the Jews",
+  option_2: "To decorate their house similar to christmas lights",
+  option_3: "To show off to their neighbors",
+  option_4: "None of the Above",
+  correct_answer: "To publicize the miracle that God performed for the Jews",
+  category_id: hannuka_hol.id
+  })
+
+###################
+# Purim Questions #
+###################
+
+pur_q1 = Question.create({
+  question: "What is the Hebrew date that Purim falls out on?",
+  option_1: "13th of Adar",
+  option_2: "14th of Adar",
+  option_3: "21st of Adar",
+  option_4: "22nd of Adar",
+  correct_answer: "14th of Adar",
+  category_id: purim_hol.id
+  })
+pur_q2 = Question.create({
+  question: "Which wicked man wanted to kill all the Jews in the story of Purim?",
+  option_1: "Adolf Hitler",
+  option_2: "Haman",
+  option_3: "King Ahasuerus",
+  option_4: "Osama bin Laden",
+  correct_answer: "Haman",
+  category_id: purim_hol.id
+  })
+pur_q3 = Question.create({
+  question: "Who foiled the plans of the wicked person?",
+  option_1: "Moses",
+  option_2: "Abraham",
+  option_3: "Isaac",
+  option_4: "Mordecai",
+  correct_answer: "Mordecai",
+  category_id: purim_hol.id
+  })
+pur_q4 = Question.create({
+  question: "On Purim, Jews are supposed to partake in which activity?",
+  option_1: "Donating charity to poor people",
+  option_2: "Exchange gifts and food with friends",
+  option_3: "Eat a celebratory meal",
+  option_4: "All of the Above",
+  correct_answer: "All of the Above",
+  category_id: purim_hol.id
+  })
+pur_q5 = Question.create({
+  question: "Purim has one custom that most resembles another custom from which Christian/Catholic holiday?",
+  option_1: "Easter",
+  option_2: "New Years",
+  option_3: "Saint Patrick's Day",
+  option_4: "Christmas",
+  correct_answer: "Saint Patrick's Day",
+  category_id: purim_hol.id
+  })
+
+######################
+# Passover Questions #
+######################
+
+pass_q1 = Question.create({
+  question: "What is the Hebrew date that Passover falls out on?",
+  option_1: "10th of Nisan",
+  option_2: "15th of Nisan",
+  option_3: "20th of Nisan",
+  option_4: "25th of Nisan",
+  correct_answer: "15th of Nisan",
+  category_id: passover_hol.id
+  })
+pass_q2 = Question.create({
+  question: "What is the Hebrew word for Passover?",
+  option_1: "Packyderm",
+  option_2: "Pesterchik",
+  option_3: "Pesach",
+  option_4: "Partech",
+  correct_answer: "Pesach",
+  category_id: passover_hol.id
+  })
+pass_q3 = Question.create({
+  question: "What is the overall theme of the Passover holiday?",
+  option_1: "Remembering not to eat pig",
+  option_2: "Freedom",
+  option_3: "Torah",
+  option_4: "Sacrificing animals to God",
+  correct_answer: "Freedom",
+  category_id: passover_hol.id
+  })
+pass_q4 = Question.create({
+  question: "How many plagues did God inflict upon the Egyptians?",
+  option_1: "5",
+  option_2: "7",
+  option_3: "10",
+  option_4: "15",
+  correct_answer: "10",
+  category_id: passover_hol.id
+  })
+pass_q5 = Question.create({
+  question: "The final plague, the death of the first-born, we get why the holiday is called Passover. What is the reason?",
+  option_1: "God passed over the homes that had the correct sign",
+  option_2: "Jews passed over and died",
+  option_3: "Egyptians passed the ball over to the Jews",
+  option_4: "None of the Above",
+  correct_answer: "God passed over the homes that had the correct sign",
+  category_id: passover_hol.id
+  })
+pass_q6 = Question.create({
+  question: "On the first night of Passover, the Jews have a special meal. What is it called?",
+  option_1: "The Sefer",
+  option_2: "The Sailor",
+  option_3: "The Seder",
+  option_4: "The Butler",
+  correct_answer: "The Seder",
+  category_id: passover_hol.id
+  })
+pass_q7 = Question.create({
+  question: "During the special meal, Maror is eaten. What is it and why is it eaten?",
+  option_1: "Bitter vegetable to remind us of the bitter oppression of slavery",
+  option_2: "Sweet fruit to remind us of the sweet freedom we have",
+  option_3: "Fatty skin of an animal which reminds us to exercise",
+  option_4: "None of the Above",
+  correct_answer: "Bitter vegetable to remind us of the bitter oppression of slavery",
+  category_id: passover_hol.id
+  })
+pass_q8 = Question.create({
+  question: "During the special meal, Maror is eaten. What is it and why is it eaten?",
+  option_1: "Bitter vegetable to remind us of the bitter oppression of slavery",
+  option_2: "Sweet fruit to remind us of the sweet freedom we have",
+  option_3: "Fatty skin of an animal which reminds us to exercise",
+  option_4: "None of the Above",
+  correct_answer: "Bitter vegetable to remind us of the bitter oppression of slavery",
+  category_id: passover_hol.id
+  })
+pass_q9 = Question.create({
+  question: "How many cups of wine do Jews drink at the special meal?",
+  option_1: "1",
+  option_2: "2",
+  option_3: "3",
+  option_4: "4",
+  correct_answer: "4",
+  category_id: passover_hol.id
+  })
+pass_q10 = Question.create({
+  question: "What is Chametz?",
+  option_1: "Bread",
+  option_2: "One of five grains mixed with water left to rise for more than 18 minutes",
+  option_3: "Not allowed to be eaten on Passover",
+  option_4: "All of the Above",
+  correct_answer: "All of the Above",
+  category_id: passover_hol.id
+  })
+
+#####################
+# Shavuot Questions #
+#####################
+
+shavuot_q1 = Question.create({
+  question: "What is the Hebrew date that Shavuot falls out on?",
+  option_1: "3rd of Sivan",
+  option_2: "6th of Sivan",
+  option_3: "9th of Sivan",
+  option_4: "12th of Sivan",
+  correct_answer: "6th of Sivan",
+  category_id: shavuot_hol.id
+  })
+shavuot_q2 = Question.create({
+  question: "What is another name Shavuot is referred as?",
+  option_1: "Festival of Days",
+  option_2: "Festival of Years",
+  option_3: "Festival of Galaxies",
+  option_4: "Festival of Weeks",
+  correct_answer: "Festival of Weeks",
+  category_id: shavuot_hol.id
+  })
+shavuot_q3 = Question.create({
+  question: "What is the gift God gave the Jewish people?",
+  option_1: "Torah",
+  option_2: "Freedom",
+  option_3: "Life",
+  option_4: "Wealth",
+  correct_answer: "Torah",
+  category_id: shavuot_hol.id
+  })
+shavuot_q4 = Question.create({
+  question: "According to the Midrash, why do the Jewish people stay up the night before learning Torah?",
+  option_1: "All nighters are awesome",
+  option_2: "Jewish people enjoy drinking coffee",
+  option_3: "They overslept the day they received the special gift from God",
+  option_4: "None of the Above",
+  correct_answer: "They overslept the day they received the special gift from God",
+  category_id: shavuot_hol.id
+  })
+shavuot_q5 = Question.create({
+  question: "Which scroll is read during prayer services on Shavuot?",
+  option_1: "Book of Lamentations",
+  option_2: "Book of Ecclesiastes",
+  option_3: "Book of Esther",
+  option_4: "Book of Ruth",
+  correct_answer: "Book of Ruth",
+  category_id: shavuot_hol.id
   })
 
 ###################
@@ -523,5 +948,12 @@ shavuot = Test.create({title: "Shavuot", category_id: shavuot_hol.id})
 kosher = Test.create({title: "Kosher", category_id: kosher_cat.id})
 
 # Assigning questions to tests
-sabbath.questions = [sab_q1,sab_q2,sab_q3,sab_q4,sab_q5,sab_q6,sab_q7]
+sabbath.questions = [sab_q1,sab_q2,sab_q3,sab_q4,sab_q5,sab_q6,sab_q7,sab_q8,sab_9]
+rosh_hashana.questions = [rosh_q1,rosh_q2,rosh_q3,rosh_q4,rosh_q5]
+yom_kippur.questions = [kip_q1,kip_q2,kip_q3,kip_q4,kip_q5]
+sukkot.questions = [sukkot_q1,sukkot_q2,sukkot_q3,sukkot_q4,sukkot_q5]
+hanukkah.questions = [hannuka_q1,hannuka_q2,hannuka_q3,hannuka_q4,hannuka_q5]
+purim.questions = [pur_q1,pur_q2,pur_q3,pur_q4,pur_q5]
+passover.questions = [pass_q1,pass_q2,pass_q3,pass_q4,pass_q5,pass_q6,pass_q7,pass_q8,pass_q9,pass_q10]
+shavuot.questions = [shavuot_q1,shavuot_q2,shavuot_q3,shavuot_q4,shavuot_q5]
 kosher.questions = [kosh_q1,kosh_q2,kosh_q3,kosh_q4,kosh_q5,kosh_q6,kosh_q7]
