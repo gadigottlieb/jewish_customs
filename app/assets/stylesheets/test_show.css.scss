@@ -1,8 +1,13 @@
+.category-test{
+  background-color: rgba(119, 117, 52, 0.75);
+}
+
 #title{
   text-align: center;
   color: white;
 }
-#category-path {
+
+#edit-test-link, #new-question-link, #category-path {
   text-align: center;
   border-style: solid;
   border-color: rgba(253, 253, 254, 0.8);
@@ -10,7 +15,22 @@
   width: 200px;
   padding: 10px 8px;
   text-align: center;
-  background-color: #190897;
+  background-color: rgb(71, 69, 30);
+  margin-left: auto;
+  margin-right: auto;
+
+  a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #4845ec;
+    transition: 100;
+  }
+}
+#edit-question{
   a{
     color: white;
     font-size: 15px;

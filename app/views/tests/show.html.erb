@@ -22,7 +22,10 @@
         <li><h3><%= question.question %></h3></li>
         <%= select_tag("questions[#{question.id}]", question.answers_string.html_safe) %>
         <% if can? :update, @question %>
-          <%= link_to "Edit Question", edit_question_path(question) %>
+          <div id="edit-question">
+            <%= link_to "Edit Question", edit_question_path(question) %>
+          </div>
+        <hr>
         <% end %>
     <% end %>
     </ol>
