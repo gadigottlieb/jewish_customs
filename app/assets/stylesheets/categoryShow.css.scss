@@ -1,3 +1,8 @@
+$blue: #162458;
+
+#category-show-page {
+    background-color: rgba(115, 112, 63, 0.35);
+}
 #edit, #test{
   border-style: solid;
   border-color: rgba(253, 253, 254, 0.8);
@@ -6,6 +11,8 @@
   padding: 10px 8px;
   text-align: center;
   background-color: #190897;
+  margin-left: auto;
+  margin-right: auto;
   a{
     color: white;
     font-size: 15px;
@@ -16,4 +23,57 @@
     color: #4845ec;
     transition: 100;
   }
+}
+
+#show-category-title{
+  color: white;
+  text-align: center;
+  background-color: rgba(119, 117, 52, 0.75);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: rgba(253, 253, 254, 0.8);
+  border-width: 3px;
+}
+#show-category-photo {
+  margin-left: auto;
+  margin-right: auto;
+}
+.description {
+  text-align: center;
+  color: white;
+}
+#quote {
+  font-size: 30px;
+  font-family: 'Coustard', serif;
+  text-align: center;
+}
+#bible-quote{
+  color: $blue;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: rgba(119, 117, 52, 0.75);
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#bible-src, #date{
+  font-size: 20px;
+  font-weight: bold;
+  color: $blue;
+  background-color: rgba(119, 117, 52, 0.75);
+  text-align: center;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#plot, #customs {
+  font-size: 20px;
+  font-weight: bold;
+  color: $blue;
+  background-color: rgba(119, 117, 52, 0.75);
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }

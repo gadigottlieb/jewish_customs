@@ -10,21 +10,26 @@
   <div id="show-category-photo">
     <%= image_tag(@category.photo) %>
   </div>
-  <div id="bible_quote">
-    <h3>Bible Quote</h3><%= @category.bible_quote %>
+  <div id="bible-quote">
+    <h3 class="description">Bible Quote</h3>
+    <div id="quote">"</div>
+      <%= @category.bible_quote %>
+    <div id="quote">"</div>
   </div>
-  <div id="bible_src">
-    <h3>Bible Source</h3><%= @category.bible_src %>
+  <div id="bible-src">
+  <h3 class="description">Bible Source</h3>
+    <%= @category.bible_src %>
   </div>
   <div id="date">
-    <h3>Date:</h3><%= @category.date %>
+    <h3 class="description">Date</h3>
+    <%= @category.date %>
   </div>
   <div id="plot">
-    <h1>Plot</h1>
+    <h3 class="description">Plot</h3>
     <%= @category.plot %>
   </div>
   <div id="customs">
-    <h1>Customs</h1>
+    <h3 class="description">Customs</h3>
     <%= @category.customs %>
   </div>
   <% if @category.questions.map(&:tests).last %>

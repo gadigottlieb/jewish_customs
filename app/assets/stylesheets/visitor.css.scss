@@ -1,11 +1,10 @@
 $blue: #111f6f;
-
+$beige: #b3b55d;
 // Welcome page
 
 
 main{
   min-height: 800px;
-  // background-color: rgba(255, 255, 255, 0.4);
   background-image: image-url("temple.jpg");
   background-size: cover;
   background-position: center;
@@ -13,22 +12,25 @@ main{
   z-index: -1;
   top: 0;
 }
-
+#welcome{
+  background-color: rgba(115, 112, 63, 0.35);
+}
 .border{
   height: relative;
   width: relative;
-  // background-color: rgba(0, 1, 26, 0.3);
 }
 
 #title {
   font-size: 60px;
   text-align: center;
-  font-family: serif;
+  font-family: Georgia;
+  color: white;
+  font-weight: bold;
 }
 .welcome-message {
   font-size: 28px;
   font-weight: 200;
-  color: #FFF;
+  color: white;
   text-align: center;
   padding: 100px 100px 60px 100px;
   // text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
@@ -37,7 +39,7 @@ main{
 .welcome-subhead {
   text-align: center;
   font-size: 18px;
-  color: #FFF;
+  color: white;
   font-style: italic;
   font-weight: 400;
   letter-spacing: 1px;
