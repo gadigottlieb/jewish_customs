@@ -8,8 +8,8 @@
   <div id="<%= category.id %>" class='category'>
     <div class="category-title"><%= category.title %></div>
     <div id="category-index-photo">
-      <% if category.photo == "http://cdn.journalism.cuny.edu/blogs.dir/604/files/2012/11/Kosher-Symbol.png" %>
-        <%= link_to(image_tag("http://cdn.journalism.cuny.edu/blogs.dir/604/files/2012/11/Kosher-Symbol.png"), kosher_path) %>
+      <% if category.photo == "kosher.jpg" %>
+        <%= link_to(image_tag("kosher.jpg"), kosher_path) %>
       <% else %>
         <%= link_to(image_tag(category.photo), category_path(category)) %>
       <% end %>

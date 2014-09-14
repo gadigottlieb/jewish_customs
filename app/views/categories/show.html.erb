@@ -1,6 +1,8 @@
 <div id="category-show-page">
   <% if can? :update, @category %>
-    <%= link_to 'Edit', edit_category_path(@category) %>
+    <div id="edit">
+      <%= link_to 'Edit', edit_category_path(@category) %>
+    </div>
   <% end %>
   <div id="show-category-title">
     <h1><%= @category.title %></h1>
@@ -26,6 +28,8 @@
     <%= @category.customs %>
   </div>
   <% if @category.questions.map(&:tests).last %>
-    <%=link_to "#{@category.title} Test", test_path(@category.questions.map(&:tests).last.first.id) %>
+    <div id="test">
+      <%=link_to "#{@category.title} Test", test_path(@category.questions.map(&:tests).last.first.id) %>
+    </div>
   <%end%>
 </div>

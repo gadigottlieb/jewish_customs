@@ -2,6 +2,18 @@ $blue: #111f6f;
 
 // Welcome page
 
+
+main{
+  min-height: 800px;
+  // background-color: rgba(255, 255, 255, 0.4);
+  background-image: image-url("temple.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+
 .border{
   height: relative;
   width: relative;

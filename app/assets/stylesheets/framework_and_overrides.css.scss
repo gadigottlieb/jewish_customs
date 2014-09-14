@@ -4,18 +4,6 @@ $blue: #111f6f;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// body
-main{
-  min-height: 800px;
-  // background-color: rgba(255, 255, 255, 0.4);
-  background-image: image-url("israel-background.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  z-index: -1;
-  top: 0;
-}
-
 // make all images responsive by default
 img {
   @extend .img-responsive;
@@ -94,62 +82,59 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
-.category {
-  display: inline-block;
-}
-
-
-#kosher-body{
-  text-align: center;
-
-}
-.kosher-symbols{
-  display: inline-block;
-}
-
-// New Test Page
-#new-question {
-  input {
-    font-size: 120%;
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-    width: 500px;
-    text-align: center;
-  }
-}
-
-// User Info
-#user-info {
-  background-color: rgba(0, 24, 99, 0.4);
-  color: white;
-  font-weight: bold;
-}
-#kosher-body,#category-show-page {
-  background-color: rgba(0, 22, 76, 0.5);
-  color: white;
-  font-weight: bold;
-}
-
-#new-question {
-  background-color: rgba(0, 27, 72, 0.39);
-  color: rgb(119, 119, 121);
-  font-weight: bold;
-}
-#delete-test-result, #user-roles{
-  color: #232323;
-}
-//user profile
-#user-info, .edit-profile{
-  a{
-    color: #fff;
-  }
-}
-// user-index
-.row  {
-  background-color: rgba(0, 22, 76, 0.5);
-  color: white;
-  font-weight: bold;
-  a {
-    color: white;
-  }
-}
+//
+//
+// #kosher-body{
+//   text-align: center;
+//
+// }
+// .kosher-symbols{
+//   display: inline-block;
+// }
+//
+// // New Test Page
+// #new-question {
+//   input {
+//     font-size: 120%;
+//     border: 1px solid #bdbdbd;
+//     border-radius: 5px;
+//     width: 500px;
+//     text-align: center;
+//   }
+// }
+//
+// // User Info
+// #user-info {
+//   background-color: rgba(0, 24, 99, 0.4);
+//   color: white;
+//   font-weight: bold;
+// }
+// #kosher-body,#category-show-page {
+//   background-color: rgba(0, 22, 76, 0.5);
+//   color: white;
+//   font-weight: bold;
+// }
+//
+// #new-question {
+//   background-color: rgba(0, 27, 72, 0.39);
+//   color: rgb(119, 119, 121);
+//   font-weight: bold;
+// }
+// #delete-test-result, #user-roles{
+//   color: #232323;
+// }
+// //user profile
+// #user-info, .edit-profile{
+//   a{
+//     color: #fff;
+//   }
+// }
+// // user-index
+// .row  {
+//   background-color: rgba(0, 22, 76, 0.5);
+//   color: white;
+//   font-weight: bold;
+//   a {
+//     color: white;
+//   }
+// }

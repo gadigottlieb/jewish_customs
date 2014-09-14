@@ -1,0 +1,19 @@
+#edit, #test{
+  border-style: solid;
+  border-color: rgba(253, 253, 254, 0.8);
+  border-width: 3px;
+  width: 200px;
+  padding: 10px 8px;
+  text-align: center;
+  background-color: #190897;
+  a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #4845ec;
+    transition: 100;
+  }
+}
