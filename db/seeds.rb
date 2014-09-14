@@ -539,10 +539,10 @@ kip_q1 = Question.create({
 kip_q2 = Question.create({
   question: "According to Jewish tradition, what does God do on Yom Kippur?",
   option_1: "Judge each person",
-  option_2: "Seal every person's fate for the upcoming year",
-  option_3: "Protect every person's fate for the upcoming year",
+  option_2: "Seal every persons fate for the upcoming year",
+  option_3: "Protect every persons fate for the upcoming year",
   option_4: "Nothing, therer is no God",
-  correct_answer: "Seal every person's fate for the upcoming year",
+  correct_answer: "Seal every persons fate for the upcoming year",
   category_id: kippur_hol.id
   })
 kip_q3 = Question.create({
@@ -717,9 +717,9 @@ pur_q5 = Question.create({
   question: "Purim has one custom that most resembles another custom from which Christian/Catholic holiday?",
   option_1: "Easter",
   option_2: "New Years",
-  option_3: "Saint Patrick's Day",
+  option_3: "Saint Patricks Day",
   option_4: "Christmas",
-  correct_answer: "Saint Patrick's Day",
+  correct_answer: "Saint Patricks Day",
   category_id: purim_hol.id
   })
 
