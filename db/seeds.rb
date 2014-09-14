@@ -469,7 +469,7 @@ sab_q10 = Question.create({
   option_2: "2 meals and 4 hallah breads",
   option_3: "3 meals and 6 hallah breads",
   option_4: "4 meals and 8 hallah breads",
-  correct_answer: "2 meals and 4 hallah breads",
+  correct_answer: "3 meals and 6 hallah breads",
   category_id: sabbath_hol.id
   })
 
@@ -546,7 +546,7 @@ kip_q2 = Question.create({
   category_id: kippur_hol.id
   })
 kip_q3 = Question.create({
-  question: "What can't a person do on Yom Kippur?",
+  question: "What can a person do on Yom Kippur?",
   option_1: "Eat, Drink, or wear leather",
   option_2: "Bath, wash, or annoint oneself with perfume or lotion",
   option_3: "Have sexual relations",
