@@ -948,7 +948,7 @@ shavuot = Test.create({title: "Shavuot", category_id: shavuot_hol.id})
 kosher = Test.create({title: "Kosher", category_id: kosher_cat.id})
 
 # Assigning questions to tests
-sabbath.questions = [sab_q1,sab_q2,sab_q3,sab_q4,sab_q5,sab_q6,sab_q7,sab_q8,sab_9]
+sabbath.questions = [sab_q1,sab_q2,sab_q3,sab_q4,sab_q5,sab_q6,sab_q7,sab_q8,sab_q9,sab_q10]
 rosh_hashana.questions = [rosh_q1,rosh_q2,rosh_q3,rosh_q4,rosh_q5]
 yom_kippur.questions = [kip_q1,kip_q2,kip_q3,kip_q4,kip_q5]
 sukkot.questions = [sukkot_q1,sukkot_q2,sukkot_q3,sukkot_q4,sukkot_q5]
