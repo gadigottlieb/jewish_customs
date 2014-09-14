@@ -64,7 +64,7 @@ sabbath_hol = Category.create({
   })
 rosh_hol = Category.create({
   title: "Rosh Hashanah",
-  photo:"http://toriavey.com/images/2010/09/HappyRoshHashanah.jpg",
+  photo:"roshhashanah.jpg",
   bible_quote: "Speak to the people of Israel, saying, In the seventh month,
                 on the first day of the month, you shall observe a day of solemn
                 rest, a memorial proclaimed with blast of trumpets, a holy convocation.",
@@ -87,7 +87,7 @@ rosh_hol = Category.create({
   })
 kippur_hol = Category.create({
   title: "Yom Kippur",
-  photo: "http://timesofrefreshingontheoldpaths.files.wordpress.com/2012/09/yomkippur.jpg",
+  photo: "yomkippur.jpg",
   bible_quote: "On the tenth day of this seventh month you shall have a holy convocation
                 and afflict yourselves. You shall do no work.",
   bible_src:   "Numbers 29:7",
@@ -119,7 +119,7 @@ kippur_hol = Category.create({
   })
 sukkot_hol = Category.create({
   title: "Sukkot",
-  photo: "http://upload.wikimedia.org/wikipedia/commons/thumb/6/62/EtrogC.jpg/300px-EtrogC.jpg",
+  photo: "sukkot.jpg",
   bible_quote: "After the ingathering from your threshing floor and your vat,
                 you shall hold the Feast of Booths for seven days…You shall hold a festival…in the
                 place that the Lord will choose, for the Lord your God will bless all your crops
@@ -155,7 +155,7 @@ sukkot_hol = Category.create({
   })
 hannuka_hol = Category.create({
   title: 				"Hanukkah",
-  photo:         "http://www.wallpapers-christmas.com/images/wmwallpapers/Happy-Hanukkah-Menorah-1.jpeg",
+  photo:         "hannukah.jpg",
   bible_quote:   "Many people define major Jewish holidays as those that feature traditional holiday meals,
                   kiddush, holiday candle-lighting, etc., and when all forms of work are forbidden.
                   Only biblical holidays fit this criteria, and Hanukah was instituted some two centuries
@@ -191,7 +191,7 @@ hannuka_hol = Category.create({
 
 purim_hol = Category.create({
   title:         "Purim",
-  photo:         "http://www.kosherkingdom.co.uk/site/wp-content/uploads/purim.jpg",
+  photo:         "purim.jpg",
   bible_quote:   "As the days wherein the Jews rested from their enemies, and the month which was turned unto
                   them from sorrow to joy, and from mourning into a good day: that they should make them days
                   of feasting and joy, and of sending portions one to another, and gifts to the poor.",
@@ -220,7 +220,7 @@ purim_hol = Category.create({
   })
 tu_hol = Category.create({
   title: 			"Tu B’shvat",
-  photo:       "http://3.bp.blogspot.com/-AfgrGyozHzA/UOw_lOrBXwI/AAAAAAAAEqo/sbyMj8jv_T8/s1600/tubshvatfruit.jpg",
+  photo:       "tubshvatfruit.jpg",
   bible_quote: "There is no direct Biblical Source but Tu Bishvat appears in the Mishnah in Tractate
                 Rosh Hashanah as one of the four new years in the Jewish calendar. The discussion of
                 when the New Year occurs was a source of debate among the rabbis: 'And there are four new year dates:
@@ -292,7 +292,7 @@ passover_hol = Category.create({
     })
 shavuot_hol = Category.create({
   title:       "Shavuot",
-  photo:       "http://torahinmyheart.com/yahoo_site_admin/assets/images/Torah_Scroll_from_123rf.175212641.jpg",
+  photo:       "shavuot.jpg",
   bible_quote: "'You shall celebrate the Feast of Weeks, that is, the first fruits of the wheat harvest, and the Feast of Ingathering at the turn of the year.'
                 'Then you shall celebrate the Feast of Weeks to the Lord your God with a tribute of a freewill offering of your hand, which you shall give just as the Lord your God blesses you'",
   bible_src:   "Exodus 34:22, Deuteronomy 16:10",
@@ -336,7 +336,7 @@ shavuot_hol = Category.create({
   })
 tish_hol = Category.create({
   title: 			"Tisha B’av",
-  photo:	     "http://www.boweryjews.com/wp-content/uploads/2014/08/photo-3.jpg",
+  photo:	     "tishabav.jpg",
   bible_quote: "According to Rabbinic tradition (as seen in the Mishnah Taanit 4:6), the sin of the Ten Spies produced the annual
                 fast day of Tisha B'Av. When the Israelites accepted the false report, they wept over the false belief that God
                 was setting them up for defeat. The night that the people cried was the ninth of Av, which became a day of weeping
@@ -376,7 +376,7 @@ tish_hol = Category.create({
                 discuss the laws of mourning.",
   date:        "9th of Av"
   })
-kosher_cat = Category.create({title: "Kosher", photo: "http://cdn.journalism.cuny.edu/blogs.dir/604/files/2012/11/Kosher-Symbol.png"})
+kosher_cat = Category.create({title: "Kosher", photo: "kosher.jpg"})
 
 ####################
 # Sabbath Questions#
