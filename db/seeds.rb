@@ -17,7 +17,7 @@ Question.destroy_all
 Test.destroy_all
 sabbath_hol = Category.create({
   title: "Sabbath",
-  photo: "http://houseofprayermessage.files.wordpress.com/2012/11/shabbat-d8b50b0ccbe7b3633d984114e2cafcb61d315c83-s6-c30.jpg",
+  photo: "sabbath.jpg",
   bible_quote: "Thus the heavens and the earth were completed in all their vast array.
                 By the seventh day God had finished the work he had been doing; so on the seventh
                 day he rested from all his work. Then God blessed the seventh day and made it holy,
