@@ -24,15 +24,34 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-App = {
-  Models: {},
-  Views: {},
-  Collections: {},
-  Router: {}
-};
+// backbone
+// App = {
+//   Models: {},
+//   Views: {},
+//   Collections: {},
+//   Router: {}
+// };
+//
+// $(document).ready(function(){
+//   App.holidayRouter = new App.HolidayRouter();
+//   App.kosherRouter = new App.KosherRouter();
+//   Backbone.history.start();
+// })
 
-$(document).ready(function(){
-  App.holidayRouter = new App.HolidayRouter();
-  App.kosherRouter = new App.KosherRouter();
-  Backbone.history.start();
-})
+// event listeners
+
+var ready;
+ready = function(){
+  console.log('ready!');
+  $('body').on('click', '.close', closeModal);
+  $('body').on('click', '#submit', gradeTest)
+}
+
+function gradeTest(){
+  
+}
+
+function closeModal(){
+  $(this).remove();
+  $('.modal').hide();
+}

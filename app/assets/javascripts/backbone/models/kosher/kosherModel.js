@@ -1,5 +1,5 @@
-App.KosherModel = Backbone.Model.extend({
-  initialize: function(){
-    console.log("New Kosher Added");
-  }
-})
+// App.KosherModel = Backbone.Model.extend({
+//   initialize: function(){
+//     console.log("New Kosher Added");
+//   }
+// })
