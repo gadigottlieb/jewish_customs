@@ -1,7 +1,10 @@
 <% if can? :create, @test %>
-  <%= link_to 'New Test', new_test_path %>
+  <div id="new-test">
+    <%= link_to 'New Test', new_test_path %>
+  </div>
 <% end %>
   <div id="test-list">
+    <p>Tests</p>
     <% @tests.each do |t| %>
       <h1><%= link_to t.title, test_path(t) %></h1>
     <% end %>

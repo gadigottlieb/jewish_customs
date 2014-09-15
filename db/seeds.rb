@@ -791,12 +791,12 @@ pass_q7 = Question.create({
   category_id: passover_hol.id
   })
 pass_q8 = Question.create({
-  question: "During the special meal, Maror is eaten. What is it and why is it eaten?",
-  option_1: "Bitter vegetable to remind us of the bitter oppression of slavery",
-  option_2: "Sweet fruit to remind us of the sweet freedom we have",
-  option_3: "Fatty skin of an animal which reminds us to exercise",
-  option_4: "None of the Above",
-  correct_answer: "Bitter vegetable to remind us of the bitter oppression of slavery",
+  question: "Passover is one of the three pilgrimage festivals. What are the other two?",
+  option_1: "Rosh Hashana and Yom Kippur",
+  option_2: "Sukkot and Hanukkah",
+  option_3: "Shavuot and Purim",
+  option_4: "Sukkot and Shavuot",
+  correct_answer: "Sukkot and Shavuot",
   category_id: passover_hol.id
   })
 pass_q9 = Question.create({

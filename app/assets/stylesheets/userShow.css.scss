@@ -1,0 +1,38 @@
+$blue: #111f6f;
+#user-show{
+  background-color: rgba(115, 112, 63, 0.35);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  a:hover {
+    color: $blue;
+  }
+}
+#user-info, #users-test{
+  background-color: rgb(71, 69, 30);
+}
+
+#edit-profile, #cancel-account{
+  border-style: solid;
+  border-color: rgba(253, 253, 254, 0.8);
+  border-width: 3px;
+  width: 200px;
+  text-align: center;
+  background-color: rgb(71, 69, 30);
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+#delete-test-result{
+  color: black;
+}

@@ -4,9 +4,47 @@
   }
 }
 
+#new-test{
+  text-align: center;
+  border-style: solid;
+  border-color: rgba(253, 253, 254, 0.8);
+  border-width: 3px;
+  width: 200px;
+  padding: 10px 8px;
+  text-align: center;
+  background-color: rgb(71, 69, 30);
+  margin-left: auto;
+  margin-right: auto;
+
+  a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover{
+    color: rgb(185, 170, 6);
+    transition: 100;
+  }
+}
+
 #test-list {
+  margin-top: 5px;
+  border-style: solid;
+  border-color: rgba(253, 253, 254, 0.8);
+  border-width: 3px;
   background-color: rgba(119, 117, 52, 0.75);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  p {
+    font-size: 34px;
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+  }
+
   a {
     color: white;
     text-decoration: none;
