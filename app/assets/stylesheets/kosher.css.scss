@@ -1,0 +1,33 @@
+#kosher{
+  background-color: rgba(115, 112, 63, 0.35);
+}
+#kosher-description, #remaining-creatures, #slaughter, #utensils,
+#milk-and-meat, #kosher-certifications,   #kosher-animals, #kosher-fish, #kosher-bird {
+  text-align: center;
+  background-color: rgba(119, 117, 52, 0.75);
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  h1{
+    font-size: 36px;
+    color: white;
+  }
+  h2 {
+    font-size: 24px;
+    color: white;
+  }
+  h3{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+  }
+  p{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.kosher-symbols{
+  display: inline-block;
+}
