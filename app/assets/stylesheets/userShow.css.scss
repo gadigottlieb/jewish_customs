@@ -1,4 +1,3 @@
-$blue: #111f6f;
 #user-show{
   background-color: rgba(115, 112, 63, 0.35);
   text-align: center;
@@ -14,7 +13,7 @@ $blue: #111f6f;
     font-size: 18px;
   }
   a:hover {
-    color: $blue;
+    color: rgb(185, 170, 6);;
   }
 }
 #user-info, #users-test{

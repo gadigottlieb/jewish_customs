@@ -20,7 +20,7 @@ $blue: #162458;
     text-decoration: none;
   }
   a:hover{
-    color: #4845ec;
+    color: rgb(185, 170, 6);
     transition: 100;
   }
 }
@@ -31,6 +31,7 @@ $blue: #162458;
   background-color: rgb(71, 69, 30);
   width: 200px;
   margin-left: auto;
+  margin-top: 15px;
   margin-right: auto;
   border-style: solid;
   border-color: rgba(253, 253, 254, 0.8);
@@ -39,6 +40,7 @@ $blue: #162458;
 #show-category-photo {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
 }
 .description {
   text-align: center;
