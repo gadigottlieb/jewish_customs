@@ -1,4 +1,5 @@
 $blue: #162458;
+$gold: rgb(185, 170, 6);
 
 #category-show-page {
   background-color: rgba(115, 112, 63, 0.35);
@@ -20,13 +21,13 @@ $blue: #162458;
     text-decoration: none;
   }
   a:hover{
-    color: rgb(185, 170, 6);
+    color: $gold;
     transition: 100;
   }
 }
 
 #show-category-title{
-  color: white;
+  color: $gold;
   text-align: center;
   background-color: rgb(71, 69, 30);
   width: 200px;
@@ -45,6 +46,8 @@ $blue: #162458;
 .description {
   text-align: center;
   color: white;
+  font-weight: bold;
+  text-decoration: underline;
 }
 #quote {
   font-size: 30px;
@@ -52,10 +55,10 @@ $blue: #162458;
   text-align: center;
 }
 #bible-quote{
-  color: $blue;
+  color: $gold;
   font-weight: bold;
   font-size: 25px;
-  background-color: rgba(119, 117, 52, 0.75);
+  background-color: rgba(119, 117, 52, 0.85);
   width: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -63,8 +66,8 @@ $blue: #162458;
 #bible-src, #date{
   font-size: 20px;
   font-weight: bold;
-  color: $blue;
-  background-color: rgba(119, 117, 52, 0.75);
+  color: $gold;
+  background-color: rgba(119, 113, 52, 0.85);
   text-align: center;
   width: 400px;
   margin-left: auto;
@@ -73,8 +76,8 @@ $blue: #162458;
 #plot, #customs {
   font-size: 20px;
   font-weight: bold;
-  color: $blue;
-  background-color: rgba(119, 117, 52, 0.75);
+  color: $gold;
+  background-color: rgba(119, 117, 52, 0.85);
   width: 800px;
   margin-left: auto;
   margin-right: auto;

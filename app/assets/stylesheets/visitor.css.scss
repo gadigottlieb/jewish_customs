@@ -1,5 +1,6 @@
 $blue: #111f6f;
 $beige: #b3b55d;
+$gold: rgb(185, 170, 6);
 // Welcome page
 
 
@@ -13,7 +14,7 @@ main{
   top: 0;
 }
 #welcome{
-  background-color: rgba(115, 112, 63, 0.35);
+  background-color: rgba(119, 117, 52, 0.60);
 }
 .border{
   height: relative;
@@ -52,7 +53,7 @@ main{
 }
 
 .sign-in a, .sign-up a {
-  color: $blue;
+  color: $gold;
   font-size: 40px;
   font-weight: 100;
   transition: all 0.8s ease;

@@ -1,7 +1,8 @@
+$gold: rgb(185, 170, 6);
+
 #user-show{
   background-color: rgba(115, 112, 63, 0.35);
   text-align: center;
-  color: white;
   font-weight: bold;
   width: 400px;
   margin-left: auto;
@@ -16,8 +17,14 @@
     color: rgb(185, 170, 6);;
   }
 }
-#user-info, #users-test{
+#user-info, #users-test, #flash{
   background-color: rgb(71, 69, 30);
+  h3{
+    text-decoration: underline;
+  }
+  h1, h3, ol, li {
+    color: $gold;
+  }
 }
 
 #edit-profile, #cancel-account{
@@ -30,8 +37,19 @@
   margin-left: auto;
   margin-right: auto;
   color: white;
+  font-weight: bold;
 }
 
 #delete-test-result{
   color: black;
 }
+
+#incorrect, #submitted-answer {
+  color: red;
+}
+#correct {
+  color: green;
+}
+// #flash {
+//   margin-top: 5px;
+// }

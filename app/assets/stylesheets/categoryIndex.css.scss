@@ -1,5 +1,9 @@
 $blue: #111f6f;
 
+.holiday{
+  margin-left: auto;
+  margin-right: auto;
+}
 //Holiday Index Photos
 .category{
   background-color: rgba(119, 117, 52, 0.75);
@@ -13,10 +17,16 @@ $blue: #111f6f;
 }
 // category-size-photo
 #category-index-photo{
-  height: 200px;
-  width: 200px;
+  height: auto;
+  width: auto;
   cursor: pointer;
-  margin: 15px 5px 5px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
 
 }
 .category-title{
