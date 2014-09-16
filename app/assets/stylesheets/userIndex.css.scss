@@ -1,0 +1,21 @@
+$gold: rgb(185, 170, 6);
+
+.row{
+  background-color: rgba(119, 117, 52, 0.75);
+  h3{
+    color: white;
+    text-align: center;
+  }
+
+}
+.email{
+  a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  a:hover{
+    color: $gold;
+  }
+}
