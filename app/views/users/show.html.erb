@@ -17,5 +17,19 @@
       <% end %>
     </ol>
   </div>
+  <div id="flash">
+    <% if flash[:show_answer] %>
+      <h3>Wrong Answers:</h3>
+      <ol>
+          <% flash[:show_answer]["questions"].each_with_index do |question, index| %>
+          <li>
+            <div id="incorrect">Question:</div><%= question %><br>
+            <div id="submitted-answer">Incorrect Answer:</div> <%= flash[:show_answer]["submitted_answers"][index] %>
+            <div id="correct">Correct Answer:</div><%= flash[:show_answer]["answers"][index] %><br><hr>
+          </li>
+        <% end %>
+      </ol>
+    <% end %>
+    </div>
   <span class="edit-profile"><%= link_to 'Edit account', edit_user_registration_path %></span>
 </div>
