@@ -15,11 +15,6 @@ class TestResult < ActiveRecord::Base
     score = (correct_answers.to_f / (correct_answers+wrong_answers).to_f) * 100
   end
 
-  def show_incorrect_question(test, answers)
-
-  end
-
-
   def show_correct_answer(test, answers)
     current_test = Test.find(test)
     incorrect_question = []
