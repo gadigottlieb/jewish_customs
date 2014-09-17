@@ -1,3 +1,5 @@
+$gold: rgb(185, 170, 6);
+
 #kosher{
   background-color: rgba(115, 112, 63, 0.35);
 }
@@ -10,7 +12,8 @@
   margin-right: auto;
   h1{
     font-size: 36px;
-    color: white;
+    color: $gold;
+    text-decoration: underline;
   }
   h2 {
     font-size: 24px;
